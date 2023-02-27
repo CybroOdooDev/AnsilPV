@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<odoo>
+    <data>
+        <record id="res_company_email_cc_bcc" model="ir.ui.view">
+            <field name="name">EmailCcBcc</field>
+            <field name="model">res.company</field>
+            <field name="priority" eval="10"/>
+            <field name="inherit_id" ref="base.view_company_form"/>
+            <field name="arch" type="xml">
+                <xpath expr=".//page[@name='general_info']" position="after">
+                    <page string="Compose Mail Settings" name="mail_settings">
+                        <group>
+                            <group>
+                                <field name="display_cc"/>
+                                <field name="display_bcc"/>
+                                <field name="display_replay_to"/>
+                                <field name="display_reci_cc"/>
+                                <field name="display_reci_bcc"/>
+                            </group>
+                            <group>
+                                <field name="default_cc" attrs="{'invisible': [('display_cc', '=', False)]}"/>
+                                <field name="default_bcc" attrs="{'invisible': [('display_bcc', '=', False)]}"/>
+                                <field name="default_replay_to"
+                                       attrs="{'invisible': [('display_replay_to', '=', False)]}"/>
+                            </group>
+                        </group>
+                    </page>
+                </xpath>
+            </field>
+        </record>
+    </data>
+</odoo>

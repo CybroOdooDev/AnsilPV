@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record model="ir.ui.view" id="compose_message_inherit">
+        <field name="name">mail.compose.message.form.inherit</field>
+        <field name="model">mail.compose.message</field>
+        <field name="inherit_id" ref="mail.email_compose_message_wizard_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='subject']" position="before">
+                <field name="email_cc_partner_ids" widget="many2many_tags_email" attrs="{'invisible': [('cc_partner_visibility','=', False)]}"/>
+                <field name="email_cc" attrs="{'invisible': [('email_cc_visible','=', False)]}"/>
+                <field name="email_bcc_partner_ids" widget="many2many_tags_email" attrs="{'invisible': [('bcc_partner_visibility','=', False)]}"/>
+                <field name="email_bcc" attrs="{'invisible': [('email_bcc_visible','=', False)]}"/>
+                <field name="email_replay_to" attrs="{'invisible': [('email_rply_to_visible','=', False)]}"/>
+                <field name="cc_partner_visibility" invisible="1"/>
+                <field name="bcc_partner_visibility" invisible="1"/>
+                <field name="email_cc_visible" invisible="1"/>
+                <field name="email_bcc_visible" invisible="1"/>
+                <field name="email_rply_to_visible" invisible="1"/>
+            </xpath>
+        </field>
+    </record>
+
+</odoo>

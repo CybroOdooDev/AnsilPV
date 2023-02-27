@@ -1,0 +1,24 @@
+<templates>
+
+    <t t-name="MailComposerInherit" t-inherit="mail.Composer" t-inherit-mode="extension" owl="1">
+        <xpath expr="//div[hasclass('o_Composer_coreHeader')]" position="inside">
+            <small>
+                <div>
+                    <t t-foreach="composerView.composer.activeThread.followers" t-as="followers"
+                       t-key="followers.localId">
+                        <input type="checkbox" id="check_follower" class="followers_check"
+                               t-on-change="(ev) => composerView.onChangeCheckFollower(ev, followers.partner)"/>
+                        <t t-esc="followers.partner.name"/>
+                        <select id="type_select" selected="cc" style="width:10%"
+                                t-on-change="(ev) => composerView.onChangeMailType(ev, followers.partner)">
+                            <option value="cc">Cc</option>
+                            <option value="bcc">Bcc</option>
+                        </select>
+                        <br/>
+                    </t>
+                </div>
+            </small>
+        </xpath>
+    </t>
+
+</templates>
