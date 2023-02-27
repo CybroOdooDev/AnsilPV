@@ -1,0 +1,2183 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+
+    <template id="theme_my_account_link" inherit_id="portal.user_dropdown" primary="True">
+        <xpath expr="//a[hasclass('dropdown-item')]" position="replace">
+            <a href="/my/home" role="menuitem" class="dropdown-item ps-3">
+                <i class="fa fa-fw fa-id-card-o me-1 small text-muted"/>
+                <div class="testdrop">My Account</div>
+            </a>
+        </xpath>
+        <xpath expr="//a[@id='o_logout']" position="replace">
+            <a t-attf-href="/web/session/logout?redirect=/" role="menuitem" id="o_logout" class="dropdown-item ps-3">
+                <i class="fa fa-fw fa-sign-out me-1 small text-muted"/>
+                <div class="testdrop">Logout</div>
+            </a>
+        </xpath>
+    </template>
+
+
+    <!--HEADER-->
+
+    <!--    Always Fixed-->
+
+    <template id="template_header_mars_fixed" inherit_id="website.layout" name="Template Header Mars fixed"
+              active="False">
+        <xpath expr="//header" position="replace">
+            <header class="">
+                <section class="nav_3 fixed-top sticker">
+                    <div class="container-fluid">
+                        <nav class="navbar navbar-expand-lg navbar-light">
+                            <a class="navbar-brand pb-2 color_m color2 d-none d-md-none d-lg-block " href="/">
+                                <t t-call="website.placeholder_header_brand"/>
+                            </a>
+                            <a class="navbar-toggler collapsed border-0 " type="button"
+                               data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown"
+                               aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="span_color"></span>
+                                <span class="span_color"></span>
+                                <span class="span_color"></span>
+                            </a>
+                            <button class="navbar-toggler" type="button"
+                                    data-toggle="collapse" data-target="#navbarText"
+                                    aria-controls="navbarText" aria-expanded="false"
+                                    aria-label="Toggle navigation">
+                                <img src="/theme_boec/static/src/images/icons/menu.png"
+                                     alt=""/>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                                <ul class="navbar-nav">
+                                    <li class="nav-item active">
+                                        <t t-foreach="website.menu_id.child_id"
+                                           t-as="submenu">
+                                            <t t-call="website.submenu">
+                                                <t t-set="item_class"
+                                                   t-value="'nav-item'"/>
+                                                <t t-set="link_class"
+                                                   t-value="'nav-link'"/>
+                                            </t>
+                                        </t>
+                                    </li>
+                                    <li>
+                                        <t t-call="website_sale.header_cart_link">
+                                            <t t-set="_icon" t-value="True"/>
+                                            <t t-set="_link_class" t-value="'nav-link'"/>
+                                        </t>
+                                    </li>
+                                    <li>
+                                        <!-- Sign In -->
+                                        <t t-call="portal.placeholder_user_sign_in">
+                                            <t t-set="_item_class" t-valuef="nav-item ms-lg-auto"/>
+                                            <t t-set="_link_class" t-valuef="nav-link fw-bold"/>
+                                        </t>
+                                        <!-- User Dropdown -->
+                                        <t t-call="portal.user_dropdown">
+                                            <t t-set="_user_name" t-value="true"/>
+                                            <t t-set="_item_class" t-valuef="nav-item dropdown ms-lg-auto"/>
+                                            <t t-set="_link_class" t-valuef="nav-link fw-bold"/>
+                                        </t>
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                </section>
+            </header>
+            <section>
+                <div class="navbar-text ">
+                </div>
+            </section>
+        </xpath>
+    </template>
+
+    <!--    Header Dark-->
+
+    <template id="template_header_mars_dark" inherit_id="website.layout" name="Template Header Mars Dark"
+              active="False">
+        <xpath expr="//header" position="replace">
+            <header class="header_drag2">
+                <section class="nav_2  topbar">
+                    <div class="container-fluid">
+                        <nav class="navbar navbar-expand-lg navbar-light" style="background-color: black;">
+                            <a class="navbar-brand pb-2 color_m color2 d-none d-md-none d-lg-block " href="/">
+                                <t t-call="website.placeholder_header_brand"/>
+                            </a>
+                            <a class="navbar-toggler collapsed border-0 " type="button"
+                               data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown"
+                               aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="span_color"></span>
+                                <span class="span_color"></span>
+                                <span class="span_color"></span>
+                            </a>
+                            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                                <ul class="navbar-nav">
+                                    <li class="nav-item active">
+                                        <t t-foreach="website.menu_id.child_id"
+                                           t-as="submenu">
+                                            <t t-call="website.submenu">
+                                                <t t-set="item_class"
+                                                   t-value="'nav-item'"/>
+                                                <t t-set="link_class"
+                                                   t-value="'nav-link'"/>
+                                            </t>
+                                        </t>
+                                    </li>
+                                    <li class="">
+                                        <t t-call="website_sale.header_cart_link">
+                                            <t t-set="_icon" t-value="True"/>
+                                            <t t-set="_link_class" t-value="'nav-link cart-clr'"/>
+                                        </t>
+                                    </li>
+                                    <li>
+                                        <!-- Sign In -->
+                                        <t t-call="portal.placeholder_user_sign_in">
+                                            <t t-set="_item_class" t-valuef="nav-item ms-lg-auto"/>
+                                            <t t-set="_link_class" t-valuef="nav-link fw-bold"/>
+                                        </t>
+                                        <!-- User Dropdown -->
+                                        <t t-call="theme_mars.theme_my_account_link">
+                                            <t t-set="_user_name" t-value="true"/>
+                                            <t t-set="_item_class" t-valuef="nav-item dropdown ms-lg-auto userdropclr"/>
+                                            <t t-set="_link_class" t-valuef="nav-link fw-bold"/>
+                                        </t>
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                </section>
+            </header>
+            <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+            <script>
+                $(document).ready(function () {
+                var s = $(".topbar");
+
+                var pos = s.position();
+                $('#wrapwrap').scroll(function () {
+                var windowpos = $('#wrapwrap').scrollTop();
+                if (windowpos >= pos.top &amp; windowpos >= 100) {
+                s.addClass("fadeInDown");
+                s.addClass("topbar_margin");
+                }
+                else {
+                s.removeClass("fadeInDown");
+                s.removeClass("topbar_margin");
+                }
+                });
+                });
+            </script>
+
+
+        </xpath>
+    </template>
+
+    <!--    Header Transparent-->
+
+    <template id="template_header_mars_transparent" inherit_id="website.layout" name="Template Header Mars Transparent"
+              active="False">
+        <xpath expr="//header" position="replace">
+            <header class="">
+                <section class="nav_1 fixed-top sticker" id="xsx">
+                    <div class="container-fluid p-0 header-transparent">
+                        <nav class="navbar navbar-expand-lg navbar-light ">
+                            <a class="navbar-brand pb-2 color_m color2 d-none d-md-none d-lg-block " href="/">
+                                <t t-call="website.placeholder_header_brand"/>
+                            </a>
+                            <a class="navbar-toggler collapsed border-0            color_m color2" type="button"
+                               data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown"
+                               aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="span_color"></span>
+                                <span class="span_color"></span>
+                                <span class="span_color"></span>
+                            </a>
+
+                            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                                <ul class="navbar-nav">
+                                    <li class="nav-item active">
+                                        <t t-foreach="website.menu_id.child_id"
+                                           t-as="submenu">
+                                            <t t-call="website.submenu">
+                                                <t t-set="item_class"
+                                                   t-value="'nav-item'"/>
+                                                <t t-set="link_class"
+                                                   t-value="'nav-link'"/>
+                                            </t>
+                                        </t>
+                                    </li>
+                                    <li>
+                                        <t t-call="website_sale.header_cart_link">
+                                            <t t-set="_icon" t-value="True"/>
+                                            <t t-set="_link_class" t-value="'nav-link'"/>
+                                        </t>
+                                    </li>
+                                    <li>
+                                        <!-- Sign In -->
+                                        <t t-call="portal.placeholder_user_sign_in">
+                                            <t t-set="_item_class" t-valuef="nav-item ms-lg-auto"/>
+                                            <t t-set="_link_class" t-valuef="nav-link fw-bold"/>
+                                        </t>
+                                        <!-- User Dropdown -->
+                                        <t t-call="portal.user_dropdown">
+                                            <t t-set="_user_name" t-value="true"/>
+                                            <t t-set="_item_class" t-valuef="nav-item dropdown ms-lg-auto"/>
+                                            <t t-set="_link_class" t-valuef="nav-link fw-bold"/>
+                                        </t>
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                </section>
+            </header>
+            <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+            <script>
+                $(document).ready(function () {
+                var s = $(".sticker");
+
+                var pos = s.position();
+                $('#wrapwrap').scroll(function () {
+                var windowpos = $('#wrapwrap').scrollTop();
+                if (windowpos >= pos.top &amp; windowpos >= 100) {
+                s.addClass("fadeInDown");
+                s.addClass("bg_white");
+
+                } else {
+                s.removeClass("fadeInDown");
+                s.removeClass("bg_white");
+
+
+                }
+                });
+                });
+            </script>
+
+            <script>
+                $(document).ready(function () {
+                var c = $(".color_m");
+
+                var pos = c.position();
+                $('#wrapwrap').scroll(function () {
+                var windowpos = $('#wrapwrap').scrollTop();
+                if (windowpos >= pos.top &amp; windowpos >= 100) {
+                c.addClass("color");
+
+
+                } else {
+                c.removeClass("color");
+
+
+                }
+                });
+                });
+            </script>
+        </xpath>
+    </template>
+
+    <!--    Header Topbar Transparent-->
+
+    <template id="template_header_mars_topbar_transparent" inherit_id="website.layout"
+              name="Template Header Mars Topbar Transparent"
+              active="False">
+        <xpath expr="//header" position="replace">
+            <header class="header_drag3">
+                <section class="top_nav_header_topbar">
+                    <div class="container-fluid p-0 header-transparent">
+                        <div class="wrapper">
+                            <div class="left">
+                                <ul class="links d-flex">
+                                    <li>
+                                        <a href="#">About</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Features</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Pricing</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Terms</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="right">
+                                <ul class="icons">
+                                    <li>
+                                        <a href="#">
+                                            <i class="bi bi-facebook "></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="bi bi-twitter"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="bi bi-google"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="bi bi-youtube"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="bi bi-instagram"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="bi bi-linkedin"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="bi bi-skype"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="bi bi-github"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="bi bi-slack"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="nav_2  topbar changeme">
+                    <div class="container-fluid header-transparent">
+                        <nav class="navbar navbar-expand-lg navbar-light">
+                            <a class="navbar-brand pb-2 color_m color2 d-none d-md-none d-lg-block " href="/">
+                                <t t-call="website.placeholder_header_brand"/>
+                            </a>
+                            <a class="navbar-toggler collapsed border-0 " type="button"
+                               data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown"
+                               aria-expanded="false" aria-label="Toggle navigation" id="test">
+                                <span class="span_color"></span>
+                                <span class="span_color"></span>
+                                <span class="span_color"></span>
+                            </a>
+                            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                                <ul class="navbar-nav">
+                                    <li class="nav-item active">
+                                        <t t-foreach="website.menu_id.child_id"
+                                           t-as="submenu">
+                                            <t t-call="website.submenu" style="color:grey">
+                                                <t t-set="item_class"
+                                                   t-value="'nav-item'"/>
+                                                <t t-set="link_class"
+                                                   t-value="'nav-link menu-clr'"/>
+                                            </t>
+                                        </t>
+                                    </li>
+                                    <li>
+                                        <t t-call="website_sale.header_cart_link">
+                                            <t t-set="_icon" t-value="True"/>
+                                            <t t-set="_link_class" t-value="'nav-link'"/>
+                                        </t>
+                                    </li>
+                                    <li>
+                                        <!-- Sign In -->
+                                        <t t-call="portal.placeholder_user_sign_in">
+                                            <t t-set="_item_class" t-valuef="nav-item ms-lg-auto"/>
+                                            <t t-set="_link_class" t-valuef="nav-link fw-bold"/>
+                                        </t>
+                                        <!-- User Dropdown -->
+                                        <t t-call="theme_mars.theme_my_account_link">
+                                            <t t-set="_user_name" t-value="true"/>
+                                            <t t-set="_item_class" t-valuef="nav-item dropdown ms-lg-auto userdropclr"/>
+                                            <t t-set="_link_class" t-valuef="nav-link fw-bold"/>
+                                        </t>
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                </section>
+            </header>
+            <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+            <script>
+                $(document).ready(function () {
+                var s = $(".topbar");
+
+                var pos = s.position();
+                $('#wrapwrap').scroll(function () {
+                var windowpos = $('#wrapwrap').scrollTop();
+                if (windowpos >= pos.top &amp; windowpos >= 100) {
+                s.addClass("fadeInDown");
+                s.addClass("topbar_margin");
+                s.addClass("dark_header");
+
+                } else {
+                s.removeClass("fadeInDown");
+                s.removeClass("topbar_margin");
+                s.removeClass("dark_header");
+
+
+                }
+                });
+                });
+            </script>
+
+            <script>
+
+                $(document).ready(function(){
+                $("#test").click(function(){
+                $(".changeme").toggleClass("main");
+                });
+                });
+            </script>
+        </xpath>
+    </template>
+
+    <!--    Header Topbar Light-->
+
+    <template id="template_header_mars_topbar_light" inherit_id="website.layout" name="Template Header Mars Tobar Light"
+              active="False">
+        <xpath expr="//header" position="replace">
+            <header class="header_drag">
+                <section class="top_nav_header_topbar">
+                    <div class="container-fluid p-0 header-transparent">
+                        <div class="wrapper">
+                            <div class="left">
+                                <ul class="links d-flex">
+                                    <li>
+                                        <a href="#">About</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Features</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Pricing</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Terms</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="right">
+                                <ul class="icons">
+                                    <li>
+                                        <a href="#">
+                                            <i class="bi bi-facebook "></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="bi bi-twitter"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="bi bi-google"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="bi bi-youtube"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="bi bi-instagram"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="bi bi-linkedin"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="bi bi-skype"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="bi bi-github"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="bi bi-slack"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="nav_2  topbar">
+                    <div class="container-fluid header-transparent">
+                        <nav class="navbar navbar-expand-lg navbar-light">
+                            <a class="navbar-brand pb-2 color_m color2 d-none d-md-none d-lg-block " href="/">
+                                <t t-call="website.placeholder_header_brand"/>
+                            </a>
+                            <a class="navbar-toggler collapsed border-0 " type="button"
+                               data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown"
+                               aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="span_color"></span>
+                                <span class="span_color"></span>
+                                <span class="span_color"></span>
+                            </a>
+                            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                                <ul class="navbar-nav">
+                                    <li class="nav-item active">
+                                        <t t-foreach="website.menu_id.child_id"
+                                           t-as="submenu">
+                                            <t t-call="website.submenu">
+                                                <t t-set="item_class"
+                                                   t-value="'nav-item'"/>
+                                                <t t-set="link_class"
+                                                   t-value="'nav-link'"/>
+                                            </t>
+                                        </t>
+                                    </li>
+                                    <li>
+                                        <t t-call="website_sale.header_cart_link">
+                                            <t t-set="_icon" t-value="True"/>
+                                            <t t-set="_link_class" t-value="'nav-link'"/>
+                                        </t>
+                                    </li>
+                                    <li>
+                                        <!-- Sign In -->
+                                        <t t-call="portal.placeholder_user_sign_in">
+                                            <t t-set="_item_class" t-valuef="nav-item ms-lg-auto"/>
+                                            <t t-set="_link_class" t-valuef="nav-link fw-bold"/>
+                                        </t>
+                                        <!-- User Dropdown -->
+                                        <t t-call="portal.user_dropdown">
+                                            <t t-set="_user_name" t-value="true"/>
+                                            <t t-set="_item_class" t-valuef="nav-item dropdown ms-lg-auto"/>
+                                            <t t-set="_link_class" t-valuef="nav-link fw-bold"/>
+                                        </t>
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                </section>
+            </header>
+            <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+            <script>
+                $(document).ready(function () {
+                var s = $(".topbar");
+
+                var pos = s.position();
+                $('#wrapwrap').scroll(function () {
+                var windowpos = $('#wrapwrap').scrollTop();
+                if (windowpos >= pos.top &amp; windowpos >= 100) {
+                s.addClass("fadeInDown");
+                s.addClass("topbar_margin");
+
+                } else {
+                s.removeClass("fadeInDown");
+                s.removeClass("topbar_margin");
+
+
+                }
+                });
+                });
+            </script>
+        </xpath>
+    </template>
+
+    <!--   Header Topbar Dark-->
+
+    <template id="template_header_mars_topbar_dark" inherit_id="website.layout" name="Template Header Mars Topbar Dark"
+              active="False">
+        <xpath expr="//header" position="replace">
+            <header class="header_drag2">
+                <section class="top_nav_header_topbar">
+                    <div class="container-fluid p-0">
+                        <div class="wrapper">
+                            <div class="left">
+                                <ul class="links d-flex">
+                                    <li>
+                                        <a href="#">About</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Features</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Pricing</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Terms</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="right">
+                                <ul class="icons">
+                                    <li>
+                                        <a href="#">
+                                            <i class="bi bi-facebook "></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="bi bi-twitter"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="bi bi-google"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="bi bi-youtube"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="bi bi-instagram"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="bi bi-linkedin"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="bi bi-skype"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="bi bi-github"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="bi bi-slack"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="nav_2  topbar">
+                    <div class="container-fluid">
+                        <nav class="navbar navbar-expand-lg navbar-light" style="background-color: black;">
+                            <a class="navbar-brand pb-2 color_m color2 d-none d-md-none d-lg-block " href="/">
+                                <t t-call="website.placeholder_header_brand"/>
+                            </a>
+                            <a class="navbar-toggler collapsed border-0 " type="button"
+                               data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown"
+                               aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="span_color"></span>
+                                <span class="span_color"></span>
+                                <span class="span_color"></span>
+                            </a>
+                            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                                <ul class="navbar-nav">
+                                    <li class="nav-item active">
+                                        <t t-foreach="website.menu_id.child_id"
+                                           t-as="submenu">
+                                            <t t-call="website.submenu">
+                                                <t t-set="item_class"
+                                                   t-value="'nav-item'"/>
+                                                <t t-set="link_class"
+                                                   t-value="'nav-link'"/>
+                                            </t>
+                                        </t>
+                                    </li>
+                                    <li>
+                                        <t t-call="website_sale.header_cart_link">
+                                            <t t-set="_icon" t-value="True"/>
+                                            <t t-set="_link_class" t-value="'nav-link cart-clr'"/>
+                                        </t>
+                                    </li>
+                                    <li>
+                                        <!-- Sign In -->
+                                        <t t-call="portal.placeholder_user_sign_in">
+                                            <t t-set="_item_class" t-valuef="nav-item ms-lg-auto"/>
+                                            <t t-set="_link_class" t-valuef="nav-link fw-bold"/>
+                                        </t>
+                                        <!-- User Dropdown -->
+                                        <t t-call="theme_mars.theme_my_account_link">
+                                            <t t-set="_user_name" t-value="true"/>
+                                            <t t-set="_item_class" t-valuef="nav-item dropdown ms-lg-auto userdropclr"/>
+                                            <t t-set="_link_class" t-valuef="nav-link fw-bold"/>
+                                        </t>
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                </section>
+            </header>
+            <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+            <script>
+                $(document).ready(function () {
+                var s = $(".topbar");
+
+                var pos = s.position();
+                $('#wrapwrap').scroll(function () {
+                var windowpos = $('#wrapwrap').scrollTop();
+                if (windowpos >= pos.top &amp; windowpos >= 100) {
+                s.addClass("fadeInDown");
+                s.addClass("topbar_margin");
+                }
+                else {
+                s.removeClass("fadeInDown");
+                s.removeClass("topbar_margin");
+                }
+                });
+                });
+            </script>
+        </xpath>
+    </template>
+
+    <!--    Header Topbar Color-->
+
+    <template id="template_header_mars_topbar_color" inherit_id="website.layout"
+              name="Template Header Mars Topbar Color"
+              active="False">
+        <xpath expr="//header" position="replace">
+            <header class="header_drag4">
+                <section class="top_nav_header_topbar">
+                    <div class="container-fluid p-0">
+                        <div class="wrapper">
+                            <div class="left">
+                                <ul class="links d-flex">
+                                    <li>
+                                        <a href="#">About</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Features</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Pricing</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Terms</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="right">
+                                <ul class="icons">
+                                    <li>
+                                        <a href="#">
+                                            <i class="bi bi-facebook "></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="bi bi-twitter"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="bi bi-google"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="bi bi-youtube"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="bi bi-instagram"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="bi bi-linkedin"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="bi bi-skype"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="bi bi-github"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="bi bi-slack"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="nav_2  topbar changeme">
+                    <div class="container-fluid header-transparent">
+                        <nav class="navbar navbar-expand-lg navbar-light">
+                            <a class="navbar-brand pb-2 color_m color2 d-none d-md-none d-lg-block " href="/">
+                                <t t-call="website.placeholder_header_brand"/>
+                            </a>
+                            <a class="navbar-toggler collapsed border-0 " type="button"
+                               data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown"
+                               aria-expanded="false" aria-label="Toggle navigation" id="test">
+                                <span class="span_color"></span>
+                                <span class="span_color"></span>
+                                <span class="span_color"></span>
+                            </a>
+                            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                                <ul class="navbar-nav">
+                                    <li class="nav-item active">
+                                        <t t-foreach="website.menu_id.child_id"
+                                           t-as="submenu">
+                                            <t t-call="website.submenu">
+                                                <t t-set="item_class"
+                                                   t-value="'nav-item'"/>
+                                                <t t-set="link_class"
+                                                   t-value="'nav-link'"/>
+                                            </t>
+                                        </t>
+                                    </li>
+                                    <li>
+                                        <t t-call="website_sale.header_cart_link">
+                                            <t t-set="_icon" t-value="True"/>
+                                            <t t-set="_link_class" t-value="'nav-link'"/>
+                                        </t>
+                                    </li>
+                                    <li>
+                                        <!-- Sign In -->
+                                        <t t-call="portal.placeholder_user_sign_in">
+                                            <t t-set="_item_class" t-valuef="nav-item ms-lg-auto"/>
+                                            <t t-set="_link_class" t-valuef="nav-link fw-bold"/>
+                                        </t>
+                                        <!-- User Dropdown -->
+                                        <t t-call="portal.user_dropdown">
+                                            <t t-set="_user_name" t-value="true"/>
+                                            <t t-set="_item_class" t-valuef="nav-item dropdown ms-lg-auto"/>
+                                            <t t-set="_link_class" t-valuef="nav-link fw-bold"/>
+                                        </t>
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                </section>
+            </header>
+            <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+            <script>
+                $(document).ready(function () {
+                var s = $(".topbar");
+
+                var pos = s.position();
+                $('#wrapwrap').scroll(function () {
+                var windowpos = $('#wrapwrap').scrollTop();
+                if (windowpos >= pos.top &amp; windowpos >= 100) {
+                s.addClass("fadeInDown");
+                s.addClass("topbar_margin");
+                s.addClass("bg_dark");
+
+                } else {
+                s.removeClass("fadeInDown");
+                s.removeClass("topbar_margin");
+                s.removeClass("bg_dark");
+
+
+                }
+                });
+                });
+            </script>
+
+            <script>
+
+                $(document).ready(function(){
+                $("#test").click(function(){
+                $(".changeme").toggleClass("main");
+                });
+                });
+            </script>
+        </xpath>
+    </template>
+
+    <!--    Header responsive Logo-->
+
+    <template id="template_header_mars_responsive_logo" inherit_id="website.layout"
+              name="Template Header Mars Responsive Logo"
+              active="False">
+        <xpath expr="//header" position="replace">
+            <header class="header_responsive_logo">
+                <section class="nav_trans  sticker">
+                    <div class="containe-fluid header-transparent">
+                        <nav class="navbar navbar-expand-lg navbar-light">
+                            <a class="navbar-brand pb-2 color_m color2 d-none d-md-none d-lg-block " href="/">
+                                <t t-call="website.placeholder_header_brand"/>
+                            </a>
+                            <a class="navbar-toggler collapsed border-0 color_m color2 " type="button"
+                               data-toggle="collapse"
+                               data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                               aria-label="Toggle navigation">
+                                <span class="span_color"></span>
+                                <span class="span_color"></span>
+                                <span class="span_color"></span>
+                            </a>
+                            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                                <ul class="navbar-nav">
+                                    <li class="nav-item active">
+                                        <t t-foreach="website.menu_id.child_id"
+                                           t-as="submenu">
+                                            <t t-call="website.submenu">
+                                                <t t-set="item_class"
+                                                   t-value="'nav-item'"/>
+                                                <t t-set="link_class"
+                                                   t-value="'nav-link'"/>
+                                            </t>
+                                        </t>
+                                    </li>
+                                    <li>
+                                        <t t-call="website_sale.header_cart_link">
+                                            <t t-set="_icon" t-value="True"/>
+                                            <t t-set="_link_class" t-value="'nav-link'"/>
+                                        </t>
+                                    </li>
+                                    <li>
+                                        <!-- Sign In -->
+                                        <t t-call="portal.placeholder_user_sign_in">
+                                            <t t-set="_item_class" t-valuef="nav-item ms-lg-auto"/>
+                                            <t t-set="_link_class" t-valuef="nav-link fw-bold"/>
+                                        </t>
+                                        <!-- User Dropdown -->
+                                        <t t-call="portal.user_dropdown">
+                                            <t t-set="_user_name" t-value="true"/>
+                                            <t t-set="_item_class" t-valuef="nav-item dropdown ms-lg-auto"/>
+                                            <t t-set="_link_class" t-valuef="nav-link fw-bold"/>
+                                        </t>
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                </section>
+            </header>
+            <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+            <script>
+                $(document).ready(function () {
+                var s = $(".sticker");
+                var pos = s.position();
+                $('#wrapwrap').scroll(function () {
+                var windowpos = $('#wrapwrap').scrollTop();
+                if (windowpos >= pos.top &amp; windowpos >= 100) {
+                s.addClass("fadeInDown");
+                s.addClass("bg_white");
+                s.addClass("topbar_margin2");
+                } else {
+                s.removeClass("fadeInDown");
+                s.removeClass("bg_white");
+                s.removeClass("topbar_margin2")
+                }
+                });
+                });
+            </script>
+            <script>
+                $(document).ready(function () {
+                var c = $(".color_m");
+                var pos = c.position();
+                $('#wrapwrap').scroll(function () {
+                var windowpos = $('#wrapwrap').scrollTop();
+                if (windowpos >= pos.top &amp; windowpos >= 100) {
+                c.addClass("color");
+                } else {
+                c.removeClass("color");
+                }
+                });
+                });
+            </script>
+        </xpath>
+    </template>
+
+    <!--    Header Responsive None Fixed-->
+
+    <template id="template_header_mars_responsive_none_fixed" inherit_id="website.layout"
+              name="Template Header Mars Responsive None Fixed"
+              active="False">
+        <xpath expr="//header" position="replace">
+            <header class="nonefix">
+                <section class="nav_3  sticker">
+                    <div class="container-fluid">
+                        <nav class="navbar navbar-expand-lg navbar-light">
+                            <a class="navbar-brand pb-2 color_m color2 d-none d-md-none d-lg-block " href="/">
+                                <t t-call="website.placeholder_header_brand"/>
+                            </a>
+                            <a class="navbar-toggler collapsed border-0 " type="button"
+                               data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown"
+                               aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="span_color"></span>
+                                <span class="span_color"></span>
+                                <span class="span_color"></span>
+                            </a>
+                            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                                <ul class="navbar-nav">
+                                    <li class="nav-item active">
+                                        <t t-foreach="website.menu_id.child_id"
+                                           t-as="submenu">
+                                            <t t-call="website.submenu">
+                                                <t t-set="item_class"
+                                                   t-value="'nav-item'"/>
+                                                <t t-set="link_class"
+                                                   t-value="'nav-link'"/>
+                                            </t>
+                                        </t>
+                                    </li>
+                                    <li>
+                                        <t t-call="website_sale.header_cart_link">
+                                            <t t-set="_icon" t-value="True"/>
+                                            <t t-set="_link_class" t-value="'nav-link'"/>
+                                        </t>
+                                    </li>
+                                    <li>
+                                        <!-- Sign In -->
+                                        <t t-call="portal.placeholder_user_sign_in">
+                                            <t t-set="_item_class" t-valuef="nav-item ms-lg-auto"/>
+                                            <t t-set="_link_class" t-valuef="nav-link fw-bold"/>
+                                        </t>
+                                        <!-- User Dropdown -->
+                                        <t t-call="portal.user_dropdown">
+                                            <t t-set="_user_name" t-value="true"/>
+                                            <t t-set="_item_class" t-valuef="nav-item dropdown ms-lg-auto"/>
+                                            <t t-set="_link_class" t-valuef="nav-link fw-bold"/>
+                                        </t>
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                </section>
+            </header>
+        </xpath>
+    </template>
+
+
+    <!--    Header Modern Transparent-->
+
+    <template id="template_header_mars_modern_transparent" inherit_id="website.layout"
+              name="Template Header Mars Modern Transparent"
+              active="False">
+        <xpath expr="//header" position="replace">
+            <header class="header_modern_transparent" style="opacity: 0.5;">
+                <section class="nav_trans  sticker">
+                    <div class="containe-fluid">
+                        <nav class="navbar navbar-expand-lg navbar-light">
+                            <a class="navbar-brand pb-2 color_m color2 d-none d-md-none d-lg-block " href="/">
+                                <t t-call="website.placeholder_header_brand"/>
+                            </a>
+                            <a class="navbar-toggler collapsed border-0 color_m color2 " type="button"
+                               data-toggle="collapse"
+                               data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                               aria-label="Toggle navigation">
+                                <span class="span_color"></span>
+                                <span class="span_color"></span>
+                                <span class="span_color"></span>
+                            </a>
+                            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                                <ul class="navbar-nav">
+                                    <li class="nav-item active">
+                                        <t t-foreach="website.menu_id.child_id"
+                                           t-as="submenu">
+                                            <t t-call="website.submenu">
+                                                <t t-set="item_class"
+                                                   t-value="'nav-item'"/>
+                                                <t t-set="link_class"
+                                                   t-value="'nav-link'"/>
+                                            </t>
+                                        </t>
+                                    </li>
+                                    <li>
+                                        <t t-call="website_sale.header_cart_link">
+                                            <t t-set="_icon" t-value="True"/>
+                                            <t t-set="_link_class" t-value="'nav-link'"/>
+                                        </t>
+                                    </li>
+                                    <li>
+                                        <!-- Sign In -->
+                                        <t t-call="portal.placeholder_user_sign_in">
+                                            <t t-set="_item_class" t-valuef="nav-item ms-lg-auto"/>
+                                            <t t-set="_link_class" t-valuef="nav-link fw-bold"/>
+                                        </t>
+                                        <!-- User Dropdown -->
+                                        <t t-call="portal.user_dropdown">
+                                            <t t-set="_user_name" t-value="true"/>
+                                            <t t-set="_item_class" t-valuef="nav-item dropdown ms-lg-auto"/>
+                                            <t t-set="_link_class" t-valuef="nav-link fw-bold"/>
+                                        </t>
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                </section>
+            </header>
+            <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+            <script>
+                $(document).ready(function () {
+                var s = $(".sticker");
+                var pos = s.position();
+                $('#wrapwrap').scroll(function () {
+                var windowpos = $('#wrapwrap').scrollTop();
+                if (windowpos >= pos.top &amp; windowpos >= 100) {
+                s.addClass("fadeInDown");
+                s.addClass("bg_white");
+                s.addClass("topbar_margin2");
+                } else {
+                s.removeClass("fadeInDown");
+                s.removeClass("bg_white");
+                s.removeClass("topbar_margin2")
+                }
+                });
+                });
+            </script>
+            <script>
+                $(document).ready(function () {
+                var c = $(".color_m");
+                var pos = c.position();
+                $('#wrapwrap').scroll(function () {
+                var windowpos = $('#wrapwrap').scrollTop();
+                if (windowpos >= pos.top &amp; windowpos >= 100) {
+                c.addClass("color");
+                } else {
+                c.removeClass("color");
+                }
+                });
+                });
+            </script>
+        </xpath>
+    </template>
+
+    <!--    Header Modern Light-->
+
+    <template id="template_header_mars_modern_light" inherit_id="website.layout"
+              name="Template Header Mars Modern Light"
+              active="False">
+        <xpath expr="//header" position="replace">
+            <header class="header_modern_light">
+                <section class="nav_modern  sticker">
+                    <div class="containe-fluid">
+                        <nav class="navbar navbar-expand-lg navbar-light">
+                            <a class="navbar-brand pb-2 color_m color2 d-none d-md-none d-lg-block " href="/">
+                                <t t-call="website.placeholder_header_brand"/>
+                            </a>
+                            <a class="navbar-toggler collapsed border-0 " type="button"
+                               data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown"
+                               aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="span_color"></span>
+                                <span class="span_color"></span>
+                                <span class="span_color"></span>
+                            </a>
+                            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                                <ul class="navbar-nav">
+                                    <li class="nav-item active">
+                                        <t t-foreach="website.menu_id.child_id"
+                                           t-as="submenu">
+                                            <t t-call="website.submenu">
+                                                <t t-set="item_class"
+                                                   t-value="'nav-item'"/>
+                                                <t t-set="link_class"
+                                                   t-value="'nav-link'"/>
+                                            </t>
+                                        </t>
+                                    </li>
+                                    <li>
+                                        <t t-call="website_sale.header_cart_link">
+                                            <t t-set="_icon" t-value="True"/>
+                                            <t t-set="_link_class" t-value="'nav-link'"/>
+                                        </t>
+                                    </li>
+                                    <li>
+                                        <!-- Sign In -->
+                                        <t t-call="portal.placeholder_user_sign_in">
+                                            <t t-set="_item_class" t-valuef="nav-item ms-lg-auto"/>
+                                            <t t-set="_link_class" t-valuef="nav-link fw-bold"/>
+                                        </t>
+                                        <!-- User Dropdown -->
+                                        <t t-call="portal.user_dropdown">
+                                            <t t-set="_user_name" t-value="true"/>
+                                            <t t-set="_item_class" t-valuef="nav-item dropdown ms-lg-auto"/>
+                                            <t t-set="_link_class" t-valuef="nav-link fw-bold"/>
+                                        </t>
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                </section>
+            </header>
+            <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+            <script>
+                $(document).ready(function () {
+                var s = $(".sticker");
+
+                var pos = s.position();
+                $('#wrapwrap').scroll(function () {
+                var windowpos = $('#wrapwrap').scrollTop();
+                if (windowpos >= pos.top &amp; windowpos >= 100) {
+                s.addClass("fadeInDown");
+                s.addClass("bg_white");
+                s.addClass("topbar_margin2");
+
+                } else {
+                s.removeClass("fadeInDown");
+                s.removeClass("bg_white");
+                s.removeClass("topbar_margin2")
+                }
+                });
+                });
+            </script>
+
+            <script>
+                $(document).ready(function () {
+                var c = $(".color_m");
+
+                var pos = c.position();
+                $('#wrapwrap').scroll(function () {
+                var windowpos = $('#wrapwrap').scrollTop();
+                if (windowpos >= pos.top &amp; windowpos >= 100) {
+                c.addClass("color");
+                } else {
+                c.removeClass("color");
+                }
+                });
+                });
+            </script>
+        </xpath>
+    </template>
+
+    <!--    Header Modern Dark-->
+
+    <template id="template_header_mars_modern_dark" inherit_id="website.layout"
+              name="Template Header Mars Modern Dark"
+              active="False">
+        <xpath expr="//header" position="replace">
+            <header class="header_modern_dark">
+                <section class="nav_modern  sticker">
+                    <div class="containe-fluid">
+                        <nav class="navbar navbar-expand-lg navbar-light">
+                            <a class="navbar-brand pb-2 color_m color2 d-none d-md-none d-lg-block " href="/">
+                                <t t-call="website.placeholder_header_brand"/>
+                            </a>
+                            <a class="navbar-toggler collapsed border-0 " type="button" data-toggle="collapse"
+                               data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                               aria-label="Toggle navigation">
+                                <span class="span_color"></span>
+                                <span class="span_color"></span>
+                                <span class="span_color"></span>
+                            </a>
+                            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                                <ul class="navbar-nav">
+                                    <li class="nav-item active">
+                                        <t t-foreach="website.menu_id.child_id"
+                                           t-as="submenu">
+                                            <t t-call="website.submenu">
+                                                <t t-set="item_class"
+                                                   t-value="'nav-item'"/>
+                                                <t t-set="link_class"
+                                                   t-value="'nav-link'"/>
+                                            </t>
+                                        </t>
+                                    </li>
+                                    <li>
+                                        <t t-call="website_sale.header_cart_link">
+                                            <t t-set="_icon" t-value="True"/>
+                                            <t t-set="_link_class" t-value="'nav-link cart-clr'"/>
+                                        </t>
+                                    </li>
+                                    <li>
+                                        <!-- Sign In -->
+                                        <t t-call="portal.placeholder_user_sign_in">
+                                            <t t-set="_item_class" t-valuef="nav-item ms-lg-auto"/>
+                                            <t t-set="_link_class" t-valuef="nav-link fw-bold"/>
+                                        </t>
+                                        <!-- User Dropdown -->
+                                        <t t-call="theme_mars.theme_my_account_link">
+                                            <t t-set="_user_name" t-value="true"/>
+                                            <t t-set="_item_class" t-valuef="nav-item dropdown ms-lg-auto userdropclr"/>
+                                            <t t-set="_link_class" t-valuef="nav-link fw-bold"/>
+                                        </t>
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                </section>
+            </header>
+            <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+            <script>
+                $(document).ready(function () {
+                var s = $(".sticker");
+                var pos = s.position();
+                $('#wrapwrap').scroll(function () {
+                var windowpos = $('#wrapwrap').scrollTop();
+                if (windowpos >= pos.top &amp; windowpos >= 100) {
+                s.addClass("fadeInDown");
+                s.addClass("bg_dark");
+                s.addClass("topbar_margin2");
+                } else {
+                s.removeClass("fadeInDown");
+                s.removeClass("bg_dark");
+                s.removeClass("topbar_margin2")
+                }
+                });
+                });
+            </script>
+            <script>
+                $(document).ready(function () {
+                var c = $(".color_m");
+                var pos = c.position();
+                $('#wrapwrap').scroll(function () {
+                var windowpos = $('#wrapwrap').scrollTop();
+                if (windowpos >= pos.top &amp; windowpos >= 100) {
+                c.addClass("color");
+                } else {
+                c.removeClass("color");
+                }
+                });
+                });
+            </script>
+        </xpath>
+    </template>
+
+    <!--    Header Menu Right-->
+
+    <template id="template_header_mars_menu_right" inherit_id="website.layout"
+              name="Template Header Mars Menu Right"
+              active="False">
+        <xpath expr="//header" position="replace">
+            <header class="header_menu_left">
+                <section class="nav_trans  sticker">
+                    <div class="containe-fluid header-transparent">
+                        <nav class="navbar navbar-expand-lg navbar-light">
+                            <a class="navbar-brand pb-2 color_m color2 d-none d-md-none d-lg-block " href="/">
+                                <t t-call="website.placeholder_header_brand"/>
+                            </a>
+                            <a class="navbar-toggler collapsed border-0 color_m color2 " type="button"
+                               data-toggle="collapse"
+                               data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                               aria-label="Toggle navigation">
+                                <span class="span_color"></span>
+                                <span class="span_color"></span>
+                                <span class="span_color"></span>
+                            </a>
+                            <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+                                <ul class="navbar-nav">
+                                    <li class="nav-item active">
+                                        <t t-foreach="website.menu_id.child_id"
+                                           t-as="submenu">
+                                            <t t-call="website.submenu">
+                                                <t t-set="item_class"
+                                                   t-value="'nav-item'"/>
+                                                <t t-set="link_class"
+                                                   t-value="'nav-link'"/>
+                                            </t>
+                                        </t>
+                                    </li>
+                                    <li>
+                                        <t t-call="website_sale.header_cart_link">
+                                            <t t-set="_icon" t-value="True"/>
+                                            <t t-set="_link_class" t-value="'nav-link'"/>
+                                        </t>
+                                    </li>
+                                    <li>
+                                        <!-- Sign In -->
+                                        <t t-call="portal.placeholder_user_sign_in">
+                                            <t t-set="_item_class" t-valuef="nav-item ms-lg-auto"/>
+                                            <t t-set="_link_class" t-valuef="nav-link fw-bold"/>
+                                        </t>
+                                        <!-- User Dropdown -->
+                                        <t t-call="portal.user_dropdown">
+                                            <t t-set="_user_name" t-value="true"/>
+                                            <t t-set="_item_class" t-valuef="nav-item dropdown ms-lg-auto"/>
+                                            <t t-set="_link_class" t-valuef="nav-link fw-bold"/>
+                                        </t>
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                </section>
+            </header>
+            <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+            <script>
+                $(document).ready(function () {
+                var s = $(".sticker");
+
+                var pos = s.position();
+                $('#wrapwrap').scroll(function () {
+                var windowpos = $('#wrapwrap').scrollTop();
+                if (windowpos >= pos.top &amp; windowpos >= 100) {
+                s.addClass("fadeInDown");
+                s.addClass("bg_white");
+
+                } else {
+                s.removeClass("fadeInDown");
+                s.removeClass("bg_white");
+
+
+                }
+                });
+                });
+            </script>
+
+            <script>
+                $(document).ready(function () {
+                var c = $(".color_m");
+
+                var pos = c.position();
+                $('#wrapwrap').scroll(function () {
+                var windowpos = $('#wrapwrap').scrollTop();
+                if (windowpos >= pos.top &amp; windowpos >= 100) {
+                c.addClass("color");
+                } else {
+                c.removeClass("color");
+                }
+                });
+                });
+            </script>
+        </xpath>
+    </template>
+
+    <!--    Header Menu Left-->
+
+    <template id="template_header_mars_menu_left" inherit_id="website.layout"
+              name="Template Header Mars Menu Left"
+              active="False">
+        <xpath expr="//header" position="replace">
+            <header class="header_menu_left">
+                <section class="nav_trans  sticker">
+                    <div class="containe-fluid header-transparent">
+                        <nav class="navbar navbar-expand-lg navbar-light">
+                            <a class="navbar-brand pb-2 color_m color2 d-none d-md-none d-lg-block " href="/">
+                                <t t-call="website.placeholder_header_brand"/>
+                            </a>
+                            <a class="navbar-toggler collapsed border-0 color_m color2 " type="button"
+                               data-toggle="collapse"
+                               data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                               aria-label="Toggle navigation">
+                                <span class="span_color"></span>
+                                <span class="span_color"></span>
+                                <span class="span_color"></span>
+                            </a>
+                            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                                <ul class="navbar-nav">
+                                    <li class="nav-item active">
+                                        <t t-foreach="website.menu_id.child_id"
+                                           t-as="submenu">
+                                            <t t-call="website.submenu">
+                                                <t t-set="item_class"
+                                                   t-value="'nav-item'"/>
+                                                <t t-set="link_class"
+                                                   t-value="'nav-link'"/>
+                                            </t>
+                                        </t>
+                                    </li>
+                                    <li>
+                                        <t t-call="website_sale.header_cart_link">
+                                            <t t-set="_icon" t-value="True"/>
+                                            <t t-set="_link_class" t-value="'nav-link'"/>
+                                        </t>
+                                    </li>
+                                    <li>
+                                        <!-- Sign In -->
+                                        <t t-call="portal.placeholder_user_sign_in">
+                                            <t t-set="_item_class" t-valuef="nav-item ms-lg-auto"/>
+                                            <t t-set="_link_class" t-valuef="nav-link fw-bold"/>
+                                        </t>
+                                        <!-- User Dropdown -->
+                                        <t t-call="portal.user_dropdown">
+                                            <t t-set="_user_name" t-value="true"/>
+                                            <t t-set="_item_class" t-valuef="nav-item dropdown ms-lg-auto"/>
+                                            <t t-set="_link_class" t-valuef="nav-link fw-bold"/>
+                                        </t>
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                </section>
+            </header>
+            <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+            <script>
+                $(document).ready(function () {
+                var s = $(".sticker");
+
+                var pos = s.position();
+                $('#wrapwrap').scroll(function () {
+                var windowpos = $('#wrapwrap').scrollTop();
+                if (windowpos >= pos.top &amp; windowpos >= 100) {
+                s.addClass("fadeInDown");
+                s.addClass("bg_white");
+
+                } else {
+                s.removeClass("fadeInDown");
+                s.removeClass("bg_white");
+
+
+                }
+                });
+                });
+            </script>
+
+            <script>
+                $(document).ready(function () {
+                var c = $(".color_m");
+
+                var pos = c.position();
+                $('#wrapwrap').scroll(function () {
+                var windowpos = $('#wrapwrap').scrollTop();
+                if (windowpos >= pos.top &amp; windowpos >= 100) {
+                c.addClass("color");
+
+
+                } else {
+                c.removeClass("color");
+
+
+                }
+                });
+                });
+            </script>
+        </xpath>
+    </template>
+
+    <!--    Header Menu Center-->
+
+    <template id="template_header_mars_menu_center" inherit_id="website.layout"
+              name="Template Header Mars Menu Center"
+              active="False">
+        <xpath expr="//header" position="replace">
+            <header class="header_menu_left">
+                <section class="nav_trans  sticker">
+                    <div class="containe-fluid header-transparent">
+                        <nav class="navbar navbar-expand-lg navbar-light">
+                            <a class="navbar-brand pb-2 color_m color2 d-none d-md-none d-lg-block " href="/">
+                                <t t-call="website.placeholder_header_brand"/>
+                            </a>
+                            <a class="navbar-toggler collapsed border-0 color_m color2 " type="button"
+                               data-toggle="collapse"
+                               data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                               aria-label="Toggle navigation">
+                                <span class="span_color"></span>
+                                <span class="span_color"></span>
+                                <span class="span_color"></span>
+                            </a>
+                            <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
+                                <ul class="navbar-nav">
+                                    <li class="nav-item active">
+                                        <t t-foreach="website.menu_id.child_id"
+                                           t-as="submenu">
+                                            <t t-call="website.submenu">
+                                                <t t-set="item_class"
+                                                   t-value="'nav-item'"/>
+                                                <t t-set="link_class"
+                                                   t-value="'nav-link'"/>
+                                            </t>
+                                        </t>
+                                    </li>
+                                    <li>
+                                        <t t-call="website_sale.header_cart_link">
+                                            <t t-set="_icon" t-value="True"/>
+                                            <t t-set="_link_class" t-value="'nav-link'"/>
+                                        </t>
+                                    </li>
+                                    <li>
+                                        <!-- Sign In -->
+                                        <t t-call="portal.placeholder_user_sign_in">
+                                            <t t-set="_item_class" t-valuef="nav-item ms-lg-auto"/>
+                                            <t t-set="_link_class" t-valuef="nav-link fw-bold"/>
+                                        </t>
+                                        <!-- User Dropdown -->
+                                        <t t-call="portal.user_dropdown">
+                                            <t t-set="_user_name" t-value="true"/>
+                                            <t t-set="_item_class" t-valuef="nav-item dropdown ms-lg-auto"/>
+                                            <t t-set="_link_class" t-valuef="nav-link fw-bold"/>
+                                        </t>
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                </section>
+            </header>
+            <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+            <script>
+                $(document).ready(function () {
+                var s = $(".sticker");
+
+                var pos = s.position();
+                $('#wrapwrap').scroll(function () {
+                var windowpos = $('#wrapwrap').scrollTop();
+                if (windowpos >= pos.top &amp; windowpos >= 100) {
+                s.addClass("fadeInDown");
+                s.addClass("bg_white");
+
+                } else {
+                s.removeClass("fadeInDown");
+                s.removeClass("bg_white");
+
+
+                }
+                });
+                });
+            </script>
+
+            <script>
+                $(document).ready(function () {
+                var c = $(".color_m");
+
+                var pos = c.position();
+                $('#wrapwrap').scroll(function () {
+                var windowpos = $('#wrapwrap').scrollTop();
+                if (windowpos >= pos.top &amp; windowpos >= 100) {
+                c.addClass("color");
+
+
+                } else {
+                c.removeClass("color");
+
+
+                }
+                });
+                });
+            </script>
+        </xpath>
+    </template>
+
+    <!--  Header Logo Right -->
+
+    <template id="template_header_mars_logo_right" inherit_id="website.layout"
+              name="Template Header Mars Logo Right"
+              active="False">
+        <xpath expr="//header" position="replace">
+            <header class="">
+                <section class="nav_logo_right fixed-top sticker">
+                    <div class="container header-transparent">
+                        <nav class="navbar navbar-expand-lg navbar-light">
+                            <a class="navbar-toggler collapsed border-0 color_m color2 " type="button"
+                               data-toggle="collapse"
+                               data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                               aria-label="Toggle navigation">
+                                <span class="span_color"></span>
+                                <span class="span_color"></span>
+                                <span class="span_color"></span>
+                            </a>
+                            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                                <ul class="navbar-nav">
+                                    <li class="nav-item active">
+                                        <t t-foreach="website.menu_id.child_id"
+                                           t-as="submenu">
+                                            <t t-call="website.submenu">
+                                                <t t-set="item_class"
+                                                   t-value="'nav-item'"/>
+                                                <t t-set="link_class"
+                                                   t-value="'nav-link'"/>
+                                            </t>
+                                        </t>
+                                    </li>
+                                    <li>
+                                        <t t-call="website_sale.header_cart_link">
+                                            <t t-set="_icon" t-value="True"/>
+                                            <t t-set="_link_class" t-value="'nav-link'"/>
+                                        </t>
+                                    </li>
+                                    <li>
+                                        <!-- Sign In -->
+                                        <t t-call="portal.placeholder_user_sign_in">
+                                            <t t-set="_item_class" t-valuef="nav-item ms-lg-auto"/>
+                                            <t t-set="_link_class" t-valuef="nav-link fw-bold"/>
+                                        </t>
+                                        <!-- User Dropdown -->
+                                        <t t-call="portal.user_dropdown">
+                                            <t t-set="_user_name" t-value="true"/>
+                                            <t t-set="_item_class" t-valuef="nav-item dropdown ms-lg-auto"/>
+                                            <t t-set="_link_class" t-valuef="nav-link fw-bold"/>
+                                        </t>
+                                    </li>
+                                </ul>
+                            </div>
+                            <a class="navbar-brand pb-2 color_m color2 d-none d-md-none d-lg-block " href="/">
+                                <t t-call="website.placeholder_header_brand"/>
+                            </a>
+                        </nav>
+                    </div>
+                </section>
+            </header>
+            <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+            <script>
+                $(document).ready(function () {
+                var s = $(".sticker");
+
+                var pos = s.position();
+                $('#wrapwrap').scroll(function () {
+                var windowpos = $('#wrapwrap').scrollTop();
+                if (windowpos >= pos.top &amp; windowpos >= 100) {
+                s.addClass("fadeInDown");
+                s.addClass("bg_white");
+
+                } else {
+                s.removeClass("fadeInDown");
+                s.removeClass("bg_white");
+
+
+                }
+                });
+                });
+            </script>
+
+            <script>
+                $(document).ready(function () {
+                var c = $(".color_m");
+
+                var pos = c.position();
+                $('#wrapwrap').scroll(function () {
+                var windowpos = $('#wrapwrap').scrollTop();
+                if (windowpos >= pos.top &amp; windowpos >= 100) {
+                c.addClass("color");
+
+
+                } else {
+                c.removeClass("color");
+
+
+                }
+                });
+                });
+            </script>
+        </xpath>
+    </template>
+
+    <!--    Header Logo Left-->
+
+    <template id="template_header_mars_logo_left" inherit_id="website.layout"
+              name="Template Header Mars Logo Left"
+              active="False">
+        <xpath expr="//header" position="replace">
+            <header class="">
+                <section class="nav_1 fixed-top sticker" id="xsx">
+                    <div class=" container container-large header-transparent">
+                        <nav class="navbar navbar-expand-lg navbar-light ">
+                            <a class="navbar-brand pb-2 color_m color2 d-none d-md-none d-lg-block " href="/">
+                                <t t-call="website.placeholder_header_brand"/>
+                            </a>
+
+                            <a class="navbar-toggler collapsed border-0            color_m color2" type="button"
+                               data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown"
+                               aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="span_color"></span>
+                                <span class="span_color"></span>
+                                <span class="span_color"></span>
+                            </a>
+                            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                                <ul class="navbar-nav">
+                                    <li class="nav-item active">
+                                        <t t-foreach="website.menu_id.child_id"
+                                           t-as="submenu">
+                                            <t t-call="website.submenu">
+                                                <t t-set="item_class"
+                                                   t-value="'nav-item'"/>
+                                                <t t-set="link_class"
+                                                   t-value="'nav-link'"/>
+                                            </t>
+                                        </t>
+                                    </li>
+                                    <li>
+                                        <t t-call="website_sale.header_cart_link">
+                                            <t t-set="_icon" t-value="True"/>
+                                            <t t-set="_link_class" t-value="'nav-link'"/>
+                                        </t>
+                                    </li>
+                                    <li>
+                                        <!-- Sign In -->
+                                        <t t-call="portal.placeholder_user_sign_in">
+                                            <t t-set="_item_class" t-valuef="nav-item ms-lg-auto"/>
+                                            <t t-set="_link_class" t-valuef="nav-link fw-bold"/>
+                                        </t>
+                                        <!-- User Dropdown -->
+                                        <t t-call="portal.user_dropdown">
+                                            <t t-set="_user_name" t-value="true"/>
+                                            <t t-set="_item_class" t-valuef="nav-item dropdown ms-lg-auto"/>
+                                            <t t-set="_link_class" t-valuef="nav-link fw-bold"/>
+                                        </t>
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                </section>
+            </header>
+            <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+            <script>
+                $(document).ready(function () {
+                var s = $(".sticker");
+
+                var pos = s.position();
+                $('#wrapwrap').scroll(function () {
+                var windowpos = $('#wrapwrap').scrollTop();
+                if (windowpos >= pos.top &amp; windowpos >= 100) {
+                s.addClass("fadeInDown");
+                s.addClass("bg_white");
+
+                } else {
+                s.removeClass("fadeInDown");
+                s.removeClass("bg_white");
+
+
+                }
+                });
+                });
+            </script>
+
+            <script>
+                $(document).ready(function () {
+                var c = $(".color_m");
+
+                var pos = c.position();
+                $('#wrapwrap').scroll(function () {
+                var windowpos = $('#wrapwrap').scrollTop();
+                if (windowpos >= pos.top &amp; windowpos >= 100) {
+                c.addClass("color");
+
+
+                } else {
+                c.removeClass("color");
+
+
+                }
+                });
+                });
+            </script>
+        </xpath>
+    </template>
+
+    <!--    Header Logo Fixed-->
+
+    <template id="template_header_mars_logo_fixed" inherit_id="website.layout"
+              name="Template Header Mars Logo Fixed"
+              active="False">
+        <xpath expr="//header" position="replace">
+            <header class="header_logo_fixed">
+                <section class="nav_1 fixed-top sticker">
+                    <div class="container header-transparent">
+                        <nav class="navbar navbar-expand-lg navbar-light ">
+
+                            <a class="navbar-brand pb-2 color_m color2 hidden" href="/">
+                                <t t-call="website.placeholder_header_brand"/>
+                            </a>
+
+<!--                            <a class="navbar-brand  color_m color2 visible hide" href="/">Odoo</a>-->
+
+                            <a class="navbar-toggler collapsed border-0            color_m color2" type="button"
+                               data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown"
+                               aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="span_color"></span>
+                                <span class="span_color"></span>
+                                <span class="span_color"></span>
+                            </a>
+                            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                                <ul class="navbar-nav">
+                                    <li class="nav-item active">
+                                        <t t-foreach="website.menu_id.child_id"
+                                           t-as="submenu">
+                                            <t t-call="website.submenu">
+                                                <t t-set="item_class"
+                                                   t-value="'nav-item'"/>
+                                                <t t-set="link_class"
+                                                   t-value="'nav-link'"/>
+                                            </t>
+                                        </t>
+                                    </li>
+                                    <li>
+                                        <t t-call="website_sale.header_cart_link">
+                                            <t t-set="_icon" t-value="True"/>
+                                            <t t-set="_link_class" t-value="'nav-link'"/>
+                                        </t>
+                                    </li>
+                                    <li>
+                                        <!-- Sign In -->
+                                        <t t-call="portal.placeholder_user_sign_in">
+                                            <t t-set="_item_class" t-valuef="nav-item ms-lg-auto"/>
+                                            <t t-set="_link_class" t-valuef="nav-link fw-bold"/>
+                                        </t>
+                                        <!-- User Dropdown -->
+                                        <t t-call="portal.user_dropdown">
+                                            <t t-set="_user_name" t-value="true"/>
+                                            <t t-set="_item_class" t-valuef="nav-item dropdown ms-lg-auto"/>
+                                            <t t-set="_link_class" t-valuef="nav-link fw-bold"/>
+                                        </t>
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                </section>
+            </header>
+            <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+            <script>
+                $(document).ready(function () {
+                var s = $(".sticker");
+                var pos = s.position();
+                $('#wrapwrap').scroll(function () {
+                var windowpos = $('#wrapwrap').scrollTop();
+                if (windowpos >= pos.top &amp; windowpos >= 100) {
+                s.addClass("fadeInDown");
+                s.addClass("bg_white");
+                } else {
+                s.removeClass("fadeInDown");
+                s.removeClass("bg_white");
+                }
+                });
+                });
+            </script>
+            <script>
+                $(document).ready(function () {
+                var c = $(".color_m");
+                var pos = c.position();
+                $('#wrapwrap').scroll(function () {
+                var windowpos = $('#wrapwrap').scrollTop();
+                if (windowpos >= pos.top &amp; windowpos >= 100) {
+                c.addClass("color");
+                } else {
+                c.removeClass("color");
+                }
+                });
+                });
+            </script>
+
+            <script>
+                $(document).ready(function () {
+                var c = $(".hidden");
+                var d = $(".visible");
+                var pos = c.position();
+                $('#wrapwrap').scroll(function () {
+                var windowpos = $('#wrapwrap').scrollTop();
+                if (windowpos >= pos.top &amp; windowpos >= 100) {
+                c.addClass("hide");
+                d.addClass("showd");
+                } else {
+                c.removeClass("hide");
+                d.removeClass("showd");
+                }
+                });
+                });
+            </script>
+        </xpath>
+    </template>
+
+    <!--    Header Light  -->
+
+    <template id="template_header_mars_light" inherit_id="website.layout"
+              name="Template Header Mars Light"
+              active="False">
+        <xpath expr="//header" position="replace">
+            <header class="">
+                <section class="nav_1 fixed-top sticker" id="xsx">
+                    <div class="container-fluid p-0 header-transparent">
+                        <nav class="navbar navbar-expand-lg navbar-light ">
+                            <a class="navbar-brand pb-2 color_m color2 d-none d-md-none d-lg-block " href="/">
+                                <t t-call="website.placeholder_header_brand"/>
+                            </a>
+
+                            <a class="navbar-toggler collapsed border-0            color_m color2" type="button"
+                               data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown"
+                               aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="span_color"></span>
+                                <span class="span_color"></span>
+                                <span class="span_color"></span>
+                            </a>
+                            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                                <ul class="navbar-nav">
+                                    <li class="nav-item active">
+                                        <t t-foreach="website.menu_id.child_id"
+                                           t-as="submenu">
+                                            <t t-call="website.submenu">
+                                                <t t-set="item_class"
+                                                   t-value="'nav-item'"/>
+                                                <t t-set="link_class"
+                                                   t-value="'nav-link'"/>
+                                            </t>
+                                        </t>
+                                    </li>
+                                    <li>
+                                        <t t-call="website_sale.header_cart_link">
+                                            <t t-set="_icon" t-value="True"/>
+                                            <t t-set="_link_class" t-value="'nav-link'"/>
+                                        </t>
+                                    </li>
+                                    <li>
+                                        <!-- Sign In -->
+                                        <t t-call="portal.placeholder_user_sign_in">
+                                            <t t-set="_item_class" t-valuef="nav-item ms-lg-auto"/>
+                                            <t t-set="_link_class" t-valuef="nav-link fw-bold"/>
+                                        </t>
+                                        <!-- User Dropdown -->
+                                        <t t-call="portal.user_dropdown">
+                                            <t t-set="_user_name" t-value="true"/>
+                                            <t t-set="_item_class" t-valuef="nav-item dropdown ms-lg-auto"/>
+                                            <t t-set="_link_class" t-valuef="nav-link fw-bold"/>
+                                        </t>
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                </section>
+            </header>
+            <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+            <script>
+                $(document).ready(function () {
+                var s = $(".sticker");
+
+                var pos = s.position();
+                $('#wrapwrap').scroll(function () {
+                var windowpos = $('#wrapwrap').scrollTop();
+                if (windowpos >= pos.top &amp; windowpos >= 100) {
+                s.addClass("fadeInDown");
+                s.addClass("bg_white");
+
+                } else {
+                s.removeClass("fadeInDown");
+                s.removeClass("bg_white");
+
+
+                }
+                });
+                });
+            </script>
+
+            <script>
+                $(document).ready(function () {
+                var c = $(".color_m");
+
+                var pos = c.position();
+                $('#wrapwrap').scroll(function () {
+                var windowpos = $('#wrapwrap').scrollTop();
+                if (windowpos >= pos.top &amp; windowpos >= 100) {
+                c.addClass("color");
+
+
+                } else {
+                c.removeClass("color");
+
+
+                }
+                });
+                });
+            </script>
+        </xpath>
+    </template>
+
+    <!--    Header Alternative-->
+
+    <template id="template_header_mars_alternative" inherit_id="website.layout"
+              name="Template Header Mars Alternative"
+              active="False">
+        <xpath expr="//header" position="replace">
+            <header class="header_alternative">
+
+                <section class="nav_2  topbar">
+                    <div class="container-fluid">
+                        <nav class="navbar navbar-expand-lg navbar-light">
+                            <t t-call="website.placeholder_header_brand"/>
+                            <a class="navbar-toggler collapsed border-0 " type="button"
+                               data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown"
+                               aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="span_color"></span>
+                                <span class="span_color"></span>
+                                <span class="span_color"></span>
+                            </a>
+
+                            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                                <ul class="navbar-nav">
+                                    <li class="nav-item active">
+                                        <t t-foreach="website.menu_id.child_id"
+                                           t-as="submenu">
+                                            <t t-call="website.submenu">
+                                                <t t-set="item_class"
+                                                   t-value="'nav-item'"/>
+                                                <t t-set="link_class"
+                                                   t-value="'nav-link'"/>
+                                            </t>
+                                        </t>
+                                    </li>
+                                    <li>
+                                        <t t-call="website_sale.header_cart_link">
+                                            <t t-set="_icon" t-value="True" class="fa fa-shopping-cart"/>
+                                            <t t-set="_link_class" t-value="'nav-link'"/>
+                                        </t>
+                                    </li>
+                                    <li>
+                                        <!-- Sign In -->
+                                        <t t-call="portal.placeholder_user_sign_in">
+                                            <t t-set="_item_class" t-valuef="nav-item ms-lg-auto"/>
+                                            <t t-set="_link_class" t-valuef="nav-link fw-bold"/>
+                                        </t>
+                                        <!-- User Dropdown -->
+                                        <t t-call="portal.user_dropdown">
+                                            <t t-set="_user_name" t-value="true"/>
+                                            <t t-set="_item_class" t-valuef="nav-item dropdown ms-lg-auto"/>
+                                            <t t-set="_link_class" t-valuef="nav-link fw-bold"/>
+                                        </t>
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                </section>
+            </header>
+            <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+            <script>
+                $(document).ready(function () {
+                var s = $(".topbar");
+
+                var pos = s.position();
+                $('#wrapwrap').scroll(function () {
+                var windowpos = $('#wrapwrap').scrollTop();
+                if (windowpos >= pos.top &amp; windowpos >= 100) {
+                s.addClass("fadeInDown");
+                s.addClass("topbar_margin");
+
+                } else {
+                s.removeClass("fadeInDown");
+                s.removeClass("topbar_margin");
+                }
+                });
+                });
+            </script>
+        </xpath>
+    </template>
+
+
+    <!--    /HEADER-->
+
+
+
+</odoo>

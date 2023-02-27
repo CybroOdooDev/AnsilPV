@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <template id="boec_custom_layout" inherit_id="website.layout" name="Custom Layout">
+        <xpath expr="//div[@id='wrapwrap']/main" position="after">
+            <html lang="en">
+                <head>
+                    <meta charset="UTF-8"/>
+                    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+                    <title>Header_topbar</title>
+
+                    <!-- Bootstrap Css -->
+                    <link rel="stylesheet"
+                          href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+                          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+                          crossorigin="anonymous"/>
+                    <link rel="stylesheet"
+                          href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"/>
+
+                    <!-- bootstrap-dropdown-hover CSS -->
+                    <link rel="stylesheet" href="css/bootstrap-dropdownhover.min.css"/>
+
+                    <!-- google icon css -->
+                    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+                    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+                          integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
+                          crossorigin="anonymous"/>
+                    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+                          integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
+                          crossorigin="anonymous"/>
+
+                    <!-- Owl carousel css -->
+                    <link rel="stylesheet" href="css/owl.carousel.min.css"/>
+                    <link rel="stylesheet" href="css/owl.theme.default.min.css"/>
+
+                    <!-- Animate CSS -->
+                    <link rel="stylesheet" href="css/animate.min.css"/>
+                    <link rel="stylesheet"
+                          href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css"
+                          integrity="sha512-Velp0ebMKjcd9RiCoaHhLXkR1sFoCCWXNp6w4zj1hfMifYB5441C+sKeBl/T/Ka6NjBiRfBBQRaQq65ekYz3UQ=="
+                          crossorigin="anonymous" referrerpolicy="no-referrer"/>
+
+                    <!-- Custom css -->
+                    <link rel="stylesheet" href="css/style.css"/>
+                </head>
+
+
+                <script src="./js/jquery-2.2.4.min.js"></script>
+
+
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+                        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+                        crossorigin="anonymous"></script>
+                <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+                        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+                        crossorigin="anonymous"></script>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js"
+                        integrity="sha512-Y2IiVZeaBwXG1wSV7f13plqlmFOx8MdjuHyYFVoYzhyRr3nH/NMDjTBSswijzADdNzMyWNetbLMfOpIPl6Cv9g=="
+                        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+                <!-- Owl carousel Js -->
+                <script src="./js/owl.carousel.js"></script>
+                <script src="./js/bootstrap-dropdownhover.min.js"></script>
+
+
+                <script src="./js/jquery.appear.min.js"></script>
+                <script src="./js/jquery.easypiechart.min.js"></script>
+
+            </html>
+        </xpath>
+    </template>
+</odoo>

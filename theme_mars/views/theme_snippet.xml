@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="snippet_options_header_mars" inherit_id="website.snippet_options" name="Template Header Mars">
+        <xpath expr="//we-button[@data-name='header_magazine_opt']" position="after">
+            <we-button title="Mars Fixed"
+                       data-name="header_mars_fixed"
+                       data-customize-website-views="theme_mars.template_header_mars_fixed"
+                       data-customize-website-variable="'mars1'"
+                       data-img="/website/static/src/img/snippets_options/header_template_image.svg"/>
+            <we-button title="Mars Header Dark"
+                       data-name="header_mars_header_dark"
+                       data-customize-website-views="theme_mars.template_header_mars_dark"
+                       data-customize-website-variable="'mars2'"
+                       data-img="/website/static/src/img/snippets_options/header_template_image.svg"/>
+            <we-button title="Mars Header Transparent"
+                       data-name="header_mars_header_transparent"
+                       data-customize-website-views="theme_mars.template_header_mars_transparent"
+                       data-customize-website-variable="'mars3'"
+                       data-img="/website/static/src/img/snippets_options/header_template_image.svg"/>
+            <we-button title="Mars Topbar Transparent"
+                       data-name="header_mars_topbar_transparent"
+                       data-customize-website-views="theme_mars.template_header_mars_topbar_transparent"
+                       data-customize-website-variable="'mars4'"
+                       data-img="/website/static/src/img/snippets_options/header_template_image.svg"/>
+            <we-button title="Mars Topbar Light"
+                       data-name="header_mars_topbar_light"
+                       data-customize-website-views="theme_mars.template_header_mars_topbar_light"
+                       data-customize-website-variable="'mars5'"
+                       data-img="/website/static/src/img/snippets_options/header_template_image.svg"/>
+            <we-button title="Mars Topbar Dark"
+                       data-name="header_mars_topbar_dark"
+                       data-customize-website-views="theme_mars.template_header_mars_topbar_dark"
+                       data-customize-website-variable="'mars6'"
+                       data-img="/website/static/src/img/snippets_options/header_template_image.svg"/>
+            <we-button title="Mars Topbar Color"
+                       data-name="header_mars_topbar_color"
+                       data-customize-website-views="theme_mars.template_header_mars_topbar_color"
+                       data-customize-website-variable="'mars7'"
+                       data-img="/website/static/src/img/snippets_options/header_template_image.svg"/>
+            <we-button title="Mars Responsive Logo"
+                       data-name="header_mars_responsive_logo"
+                       data-customize-website-views="theme_mars.template_header_mars_responsive_logo"
+                       data-customize-website-variable="'mars8'"
+                       data-img="/website/static/src/img/snippets_options/header_template_image.svg"/>
+            <we-button title="Mars Responsive None Fixed"
+                       data-name="header_mars_responsive_none_fixed"
+                       data-customize-website-views="theme_mars.template_header_mars_responsive_none_fixed"
+                       data-customize-website-variable="'mars9'"
+                       data-img="/website/static/src/img/snippets_options/header_template_image.svg"/>
+            <we-button title="Mars Modern Transparent"
+                       data-name="header_mars_modern_transparent"
+                       data-customize-website-views="theme_mars.template_header_mars_modern_transparent"
+                       data-customize-website-variable="'mars10'"
+                       data-img="/website/static/src/img/snippets_options/header_template_image.svg"/>
+            <we-button title="Mars Modern Light"
+                       data-name="header_mars_modern_light"
+                       data-customize-website-views="theme_mars.template_header_mars_modern_light"
+                       data-customize-website-variable="'mars11'"
+                       data-img="/website/static/src/img/snippets_options/header_template_image.svg"/>
+            <we-button title="Mars Modern Dark"
+                       data-name="header_mars_modern_dark"
+                       data-customize-website-views="theme_mars.template_header_mars_modern_dark"
+                       data-customize-website-variable="'mars12'"
+                       data-img="/website/static/src/img/snippets_options/header_template_image.svg"/>
+            <we-button title="Mars Menu Right"
+                       data-name="header_mars_menu_right"
+                       data-customize-website-views="theme_mars.template_header_mars_menu_right"
+                       data-customize-website-variable="'mars13'"
+                       data-img="/website/static/src/img/snippets_options/header_template_image.svg"/>
+            <we-button title="Mars Menu Left"
+                       data-name="header_mars_menu_left"
+                       data-customize-website-views="theme_mars.template_header_mars_menu_left"
+                       data-customize-website-variable="'mars14'"
+                       data-img="/website/static/src/img/snippets_options/header_template_image.svg"/>
+            <we-button title="Mars Menu Center"
+                       data-name="header_mars_menu_center"
+                       data-customize-website-views="theme_mars.template_header_mars_menu_center"
+                       data-customize-website-variable="'mars15'"
+                       data-img="/website/static/src/img/snippets_options/header_template_image.svg"/>
+            <we-button title="Mars Logo Right"
+                       data-name="header_mars_logo_right"
+                       data-customize-website-views="theme_mars.template_header_mars_logo_right"
+                       data-customize-website-variable="'mars16'"
+                       data-img="/website/static/src/img/snippets_options/header_template_image.svg"/>
+            <we-button title="Mars Logo Left"
+                       data-name="header_mars_logo_left"
+                       data-customize-website-views="theme_mars.template_header_mars_logo_left"
+                       data-customize-website-variable="'mars17'"
+                       data-img="/website/static/src/img/snippets_options/header_template_image.svg"/>
+            <we-button title="Mars Logo Fixed"
+                       data-name="header_mars_logo_fixed"
+                       data-customize-website-views="theme_mars.template_header_mars_logo_fixed"
+                       data-customize-website-variable="'mars18'"
+                       data-img="/website/static/src/img/snippets_options/header_template_image.svg"/>
+            <we-button title="Mars Light"
+                       data-name="header_mars_light"
+                       data-customize-website-views="theme_mars.template_header_mars_light"
+                       data-customize-website-variable="'mars19'"
+                       data-img="/website/static/src/img/snippets_options/header_template_image.svg"/>
+            <we-button title="Mars Alternative"
+                       data-name="header_mars_alternative"
+                       data-customize-website-views="theme_mars.template_header_mars_alternative"
+                       data-customize-website-variable="'mars20'"
+                       data-img="/website/static/src/img/snippets_options/header_template_image.svg"/>
+        </xpath>
+    </template>
+
+    <template id="snippet_options_footer_mars" inherit_id="website.snippet_options" name="Template Footer Mars">
+        <xpath expr="//we-select[@data-variable='footer-template']" position="inside">
+            <we-button title="Mars Footer 0"
+                       data-customize-website-views="theme_mars.template_footer_mars_0"
+                       data-customize-website-variable="'mars0'"
+                       data-img="/website/static/src/img/snippets_options/footer_template_contact.svg"/>
+            <we-button title="Mars Footer 1"
+                       data-customize-website-views="theme_mars.template_footer_mars_1"
+                       data-customize-website-variable="'mars1'"
+                       data-img="/website/static/src/img/snippets_options/footer_template_contact.svg"/>
+            <we-button title="Mars Footer 2"
+                       data-customize-website-views="theme_mars.template_footer_mars_2"
+                       data-customize-website-variable="'mars2'"
+                       data-img="/website/static/src/img/snippets_options/footer_template_contact.svg"/>
+            <we-button title="Mars Footer 3"
+                       data-customize-website-views="theme_mars.template_footer_mars_3"
+                       data-customize-website-variable="'mars3'"
+                       data-img="/website/static/src/img/snippets_options/footer_template_contact.svg"/>
+            <we-button title="Mars Footer 4"
+                       data-customize-website-views="theme_mars.template_footer_mars_4"
+                       data-customize-website-variable="'mars4'"
+                       data-img="/website/static/src/img/snippets_options/footer_template_contact.svg"/>
+            <we-button title="Mars Footer 5"
+                       data-customize-website-views="theme_mars.template_footer_mars_5"
+                       data-customize-website-variable="'mars5'"
+                       data-img="/website/static/src/img/snippets_options/footer_template_contact.svg"/>
+            <we-button title="Mars Footer 6"
+                       data-customize-website-views="theme_mars.template_footer_mars_6"
+                       data-customize-website-variable="'mars6'"
+                       data-img="/website/static/src/img/snippets_options/footer_template_contact.svg"/>
+        </xpath>
+    </template>
+
+
+    <template id="inherit_snippets" inherit_id="web_editor.snippets">
+        <xpath expr="//div[@id='o_scroll']/t[@id='default_snippets']" position="after">
+            <div id="snippet_animate" class="o_panel">
+                <div class="o_panel_header">About Us</div>
+                <div class="o_panel_body">
+                    <t t-snippet="theme_mars.pie_chart"/>
+                    <t t-snippet="theme_mars.bur_now"/>
+                    <t t-snippet="theme_mars.work_section"/>
+                    <t t-snippet="theme_mars.company_skill"/>
+                    <t t-snippet="theme_mars.banner"/>
+                    <t t-snippet="theme_mars.team"/>
+                    <t t-snippet="theme_mars.about_section"/>
+                    <t t-snippet="theme_mars.partners"/>
+                    <t t-snippet="theme_mars.quates"/>
+                    <t t-snippet="theme_mars.carousel"/>
+                </div>
+            </div>
+        </xpath>
+    </template>
+
+</odoo>

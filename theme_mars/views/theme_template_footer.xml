@@ -1,0 +1,1235 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <!--FOOTER    -->
+
+    <!--    Footer 0-->
+
+    <template id="template_footer_mars_0" inherit_id="website.layout" name="Template Header Footer Mars_0"
+              active="False">
+        <xpath expr="//div[@id='footer']" position="replace">
+            <section class="footer">
+                <div class="container">
+                    <div class="wrapper">
+                        <div class="row">
+                            <div class="col-lg-4 col-md-4 col-sm-6 col-12">
+                                <div class="footer_abt">
+                                    <h6 style="color: black;">
+                                        Mars Odoo Theme
+                                    </h6>
+                                    <p>
+                                        Built with Cybrosys calicut, Kerala, INDIA
+                                        All rights reserved. Copyright © 2021. CYBROSYS
+                                    </p>
+                                    <a class="btn btn-primary" href="#">Purchase Now</a>
+                                </div>
+                            </div>
+                            <div class="col-lg-2 col-md-4 col-sm-6 col-12">
+                                <div class="footer_links">
+                                    <h6 style="color: black;">
+                                        Discover
+                                    </h6>
+                                    <ul>
+                                        <li>
+                                            <a href="#">Features</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Layouts</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Corporate</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Updates</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Pricing</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Customers</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-lg-2 col-md-4 col-sm-6 col-12">
+                                <div class="footer_links">
+                                    <h6 style="color: black;">
+                                        Features
+                                    </h6>
+                                    <ul>
+                                        <li>
+                                            <a href="#">Layouts</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Headers</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Widgets</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Footers</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-lg-2 col-md-4 col-sm-6 col-12">
+                                <div class="footer_links">
+                                    <h6 style="color: black;">
+                                        Pages
+                                    </h6>
+                                    <ul>
+                                        <li>
+                                            <a href="#">Portfolio</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Blog</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Shop</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-lg-2 col-md-4 col-sm-6 col-12">
+                                <div class="footer_links">
+                                    <h6 style="color: black;">
+                                        Support
+                                    </h6>
+                                    <ul>
+                                        <li>
+                                            <a href="#">Help Desk</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Documentation</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Contact US</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer_bottom text-center">
+                    <div class="container">
+                        <p>
+                            © 2022 MARS - Responsive Multi-Purpose HTML5 Template. All Rights Reserved.
+                            <a href="#">CYBROSYS</a>
+                        </p>
+                    </div>
+                </div>
+            </section>
+        </xpath>
+    </template>
+
+    <!--    Footer 1-->
+
+
+    <template id="template_footer_mars_1" inherit_id="website.layout" name="Template Header Footer Mars_1"
+              active="False">
+        <xpath expr="//div[@id='footer']" position="replace">
+            <section class="footer_dark">
+                <div class="container">
+                    <div class="wrapper">
+                        <div class="row">
+                            <div class="col-lg-2 col-md-2 col-12">
+                                <div class="footer_links">
+                                    <h6>
+                                        Discover
+                                    </h6>
+                                    <ul>
+                                        <li>
+                                            <a href="#">Features</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Layouts</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Corporate</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Updates</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Pricing</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Customers</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-lg-2 col-md-2 col-12">
+                                <div class="footer_links">
+                                    <h6>
+                                        Features
+                                    </h6>
+                                    <ul>
+                                        <li>
+                                            <a href="#">Layouts</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Headers</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Widgets</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Footers</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-lg-2 col-md-2 col-12">
+                                <div class="footer_links">
+                                    <h6>
+                                        Pages
+                                    </h6>
+                                    <ul>
+                                        <li>
+                                            <a href="#">Portfolio</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Blog</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Shop</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-lg-2 col-md-2 col-12">
+                                <div class="footer_links">
+                                    <h6>
+                                        Support
+                                    </h6>
+                                    <ul>
+                                        <li>
+                                            <a href="#">Help Desk</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Documentation</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Contact US</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-12">
+                                <div class="footer_abt">
+                                    <h6>
+                                        Mars Odoo Theme
+                                    </h6>
+                                    <p>
+                                        Built with Cybrosys calicut, Kerala, INDIA
+                                        All rights reserved. Copyright © 2021. CYBROSYS
+                                    </p>
+                                    <a class="btn btn-primary" href="#">Purchase Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer_bottom_icon">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-5 col-md-5 col-12">
+                                <ul class="f_icons">
+                                    <li>
+                                        <a href="/website/social/facebook" class="s_social_media_facebook"
+                                           target="_blank">
+                                            <i class="bi bi-facebook "></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/website/social/twitter" class="s_social_media_twitter"
+                                           target="_blank">
+                                            <i class="bi bi-twitter"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/website/social/google" class="s_social_media_google" target="_blank">
+                                            <i class="bi bi-google"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/website/social/youtube" class="s_social_media_youtube"
+                                           target="_blank">
+                                            <i class="bi bi-youtube"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/website/social/instagram" class="s_social_media_instagram"
+                                           target="_blank">
+                                            <i class="bi bi-instagram"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/website/social/linkedin" class="s_social_media_linkedin"
+                                           target="_blank">
+                                            <i class="bi bi-linkedin"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/website/social/skype" class="s_social_media_skype" target="_blank">
+                                            <i class="bi bi-skype"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-lg-7 col-md-7 col-12">
+                                <p>
+                                    © 2019 POLO - Responsive Multi-Purpose HTML5 Template. All Rights Reserved.
+                                    <a
+                                            href="#">CYBROSYS
+                                    </a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </xpath>
+    </template>
+
+
+    <!--    Footer 2-->
+
+    <template id="template_footer_mars_2" inherit_id="website.layout" name="Template Header Footer Mars_2"
+              active="False">
+        <xpath expr="//div[@id='footer']" position="replace">
+            <section class="footer">
+                <div class="container">
+                    <div class="wrapper">
+                        <div class="row">
+
+                            <div class="col-lg-4 col-md-6 col-12">
+                                <div class="footer_abt">
+                                    <h1 class="footer_brand" style="color: black;">
+                                        Mars
+                                    </h1>
+                                    <p>
+                                        To design is to discover relationships and to make arrangements and
+                                        rearrangements among these ingredients.
+                                    </p>
+
+
+                                </div>
+                            </div>
+                            <div class="col-lg-2 col-md-3 col-12">
+                                <div class="footer_links">
+                                    <h6 style="color: black;">
+                                        Company
+                                    </h6>
+                                    <ul>
+                                        <li>
+                                            <a href="#">About
+
+
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Contact</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Home</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Blog</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Portfolio</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-lg-2 col-md-3 col-12">
+                                <div class="footer_links">
+                                    <h6 style="color: black;">
+                                        Support
+                                    </h6>
+                                    <ul>
+                                        <li>
+                                            <a href="#">Troubleshooting
+                                                FAQS
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Common Questions
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Report a Bug
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Get Help
+                                            </a>
+                                        </li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-lg-2 col-md-6 col-12">
+                                <div class="footer_links">
+                                    <h6 style="color: black;">
+                                        Project
+                                    </h6>
+                                    <ul>
+                                        <li>
+                                            <a href="#">Latest Release</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+
+                                                Links
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Updates</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">License</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">News</a>
+                                        </li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-lg-2 col-md-6 col-12">
+                                <div class="footer_links">
+                                    <a class="btn btn-primary" href="#">Download Now</a>
+
+
+                                    <div class="follow">
+                                        <div class="f_h">follow us</div>
+                                        <ul class="follow_icons">
+                                            <li>
+                                                <a href="/website/social/facebook" class="s_social_media_facebook"
+                                                   target="_blank">
+                                                    <i class="bi bi-facebook "></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="/website/social/twitter" class="s_social_media_twitter"
+                                                   target="_blank">
+                                                    <i class="bi bi-twitter"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="/website/social/youtube" class="s_social_media_youtube"
+                                                   target="_blank">
+                                                    <i class="bi bi-youtube"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="/website/social/instagram" class="s_social_media_instagram"
+                                                   target="_blank">
+                                                    <i class="bi bi-instagram"></i>
+                                                </a>
+                                            </li>
+
+
+                                        </ul>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer_bottom text-center">
+                    <div class="container">
+                        <p>
+                            © 2019 POLO - Responsive Multi-Purpose HTML5 Template. All Rights Reserved.
+                            <a href="#">CYBROSYS</a>
+                        </p>
+                    </div>
+
+                </div>
+            </section>
+        </xpath>
+    </template>
+
+
+    <!--    Footer 3-->
+
+
+    <template id="template_footer_mars_3" inherit_id="website.layout" name="Template Header Footer Mars_3"
+              active="False">
+        <xpath expr="//div[@id='footer']" position="replace">
+            <section class="footer_bg">
+                <div class="container">
+                    <div class="wrapper">
+
+
+                        <div class="row">
+
+                            <div class="col-lg-4 col-md-6 col-12">
+                                <div class="footer_abt">
+                                    <h6 class="header-clr" style="color:black;">
+                                        About Mars
+                                    </h6>
+                                    <div class="footer_address" style="color: #484848;">
+                                        <div t-field="res_company.partner_id"/>
+                                        <div t-field="res_company.street"/>
+                                        <div t-field="res_company.email"/>
+                                        <div t-field="res_company.phone"/>
+                                        <div t-field="res_company.website"/>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                            <div class="col-lg-2 col-md-3 col-12">
+                                <div class="footer_links">
+                                    <h6 class="header-clr" style="color:black;">
+                                        Discover
+                                    </h6>
+                                    <ul>
+                                        <li>
+                                            <a href="#">Features</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Layouts</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Corporate</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Updates</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Pricing</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Customers</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-lg-2 col-md-3 col-12">
+                                <div class="footer_links">
+                                    <h6 class="header-clr" style="color:black;">
+                                        Features
+                                    </h6>
+                                    <ul>
+                                        <li>
+                                            <a href="#">Layouts</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Headers</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Widgets</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Footers</a>
+                                        </li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-8 col-12">
+                                <div class="footer_form">
+                                    <h6 class="header-clr" style="color:black;">
+                                        Contact Us
+                                    </h6>
+                                    <section class="s_website_form" data-vcss="001" data-snippet="s_website_form">
+                                        <div class="container">
+                                            <form id="contactus_form" action="/website/form/" method="post"
+                                                  enctype="multipart/form-data" class="o_mark_required" data-mark="*"
+                                                  data-model_name="mail.mail" data-success-mode="redirect"
+                                                  data-success-page="/contactus-thank-you" data-pre-fill="true">
+                                                <div class="s_website_form_rows row s_col_no_bgcolor">
+                                                    <div class="mb-0 py-2 col-12 s_website_form_field s_website_form_custom s_website_form_required"
+                                                         data-type="char" data-name="Field">
+                                                        <div class="row s_col_no_resize s_col_no_bgcolor">
+                                                            <label class="col-form-label col-sm-auto s_website_form_label"
+                                                                   style="width: 200px" for="contact1">
+                                                                <span class="s_website_form_label_content text-color">
+                                                                    Name
+                                                                </span>
+                                                                <span class="s_website_form_mark">*</span>
+                                                            </label>
+                                                            <div class="col-sm">
+                                                                <input id="contact1" type="text"
+                                                                       class="form-control s_website_form_input"
+                                                                       name="name" required="" data-fill-with="name"
+                                                                       style="width:170%;"/>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="mb-0 py-2 col-12 s_website_form_field s_website_form_custom"
+                                                         data-type="char" data-name="Field">
+                                                        <div class="row s_col_no_resize s_col_no_bgcolor">
+                                                            <label class="col-form-label col-sm-auto s_website_form_label"
+                                                                   style="width: 200px" for="contact2">
+                                                                <span class="s_website_form_label_content text-color">
+                                                                    Phone
+                                                                    Number
+                                                                </span>
+                                                            </label>
+                                                            <div class="col-sm">
+                                                                <input id="contact2" type="tel"
+                                                                       class="form-control s_website_form_input"
+                                                                       name="phone" data-fill-with="phone"
+                                                                       style="width:170%;"/>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="mb-0 py-2 col-12 s_website_form_field s_website_form_required"
+                                                         data-type="email" data-name="Field">
+                                                        <div class="row s_col_no_resize s_col_no_bgcolor">
+                                                            <label class="col-form-label col-sm-auto s_website_form_label"
+                                                                   style="width: 200px" for="contact3">
+                                                                <span class="s_website_form_label_content text-color">
+                                                                    Email
+                                                                </span>
+                                                                <span class="s_website_form_mark">*</span>
+                                                            </label>
+                                                            <div class="col-sm">
+                                                                <input id="contact3" type="email"
+                                                                       class="form-control s_website_form_input"
+                                                                       name="email_from" required=""
+                                                                       data-fill-with="email" style="width:170%;"/>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="mb-0 py-2 col-12 s_website_form_field s_website_form_custom"
+                                                         data-type="char" data-name="Field">
+                                                        <div class="row s_col_no_resize s_col_no_bgcolor">
+                                                            <label class="col-form-label col-sm-auto s_website_form_label"
+                                                                   style="width: 200px" for="contact4">
+                                                                <span class="s_website_form_label_content text-color">
+                                                                    Company
+                                                                </span>
+                                                            </label>
+                                                            <div class="col-sm">
+                                                                <input id="contact4" type="text"
+                                                                       class="form-control s_website_form_input"
+                                                                       name="company"
+                                                                       data-fill-with="commercial_company_name"
+                                                                       style="width:170%;"/>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="mb-0 py-2 col-12 s_website_form_field s_website_form_required"
+                                                         data-type="char" data-name="Field">
+                                                        <div class="row s_col_no_resize s_col_no_bgcolor">
+                                                            <label class="col-form-label col-sm-auto s_website_form_label"
+                                                                   style="width: 200px" for="contact5">
+                                                                <span class="s_website_form_label_content text-color">
+                                                                    Subject
+                                                                </span>
+                                                                <span class="s_website_form_mark">*</span>
+                                                            </label>
+                                                            <div class="col-sm">
+                                                                <input id="contact5" type="text"
+                                                                       class="form-control s_website_form_input"
+                                                                       name="subject" required="" style="width:170%;"/>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="mb-0 py-2 col-12 s_website_form_field s_website_form_custom s_website_form_required"
+                                                         data-type="text" data-name="Field">
+                                                        <div class="row s_col_no_resize s_col_no_bgcolor">
+                                                            <label class="col-form-label col-sm-auto s_website_form_label"
+                                                                   style="width: 200px" for="contact6">
+                                                                <span class="s_website_form_label_content text-color">
+                                                                    Question
+                                                                </span>
+                                                            </label>
+                                                            <div class="col-sm">
+                                                                <textarea id="contact6"
+                                                                          class="form-control s_website_form_input"
+                                                                          name="description" required=""
+                                                                          style="width:170%;"></textarea>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="mb-0 py-2 col-12 s_website_form_field s_website_form_dnone">
+                                                        <div class="row s_col_no_resize s_col_no_bgcolor">
+                                                            <label class="col-form-label col-sm-auto s_website_form_label"
+                                                                   style="width: 200px" for="contact7">
+                                                                <span class="s_website_form_label_content">Email To
+                                                                </span>
+                                                            </label>
+                                                            <div class="col-sm">
+                                                                <input id="contact7" type="hidden"
+                                                                       class="form-control s_website_form_input"
+                                                                       name="email_to"/>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="mb-0 py-2 col-12 s_website_form_submit"
+                                                         data-name="Submit Button">
+                                                        <div style="width: 200px;" class="s_website_form_label"/>
+                                                        <a href="#" role="button"
+                                                           class="btn btn-primary btn-lg s_website_form_send">Submit
+                                                        </a>
+                                                        <span id="s_website_form_result"></span>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </section>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="footer_bottom text-center">
+                    <div class="container">
+                        <p>
+                            © 2019 POLO - Responsive Multi-Purpose HTML5 Template. All Rights Reserved.
+                            <a href="#">CYBROSYS</a>
+                        </p>
+                    </div>
+
+                </div>
+            </section>
+        </xpath>
+    </template>
+
+
+    <!--    Footer 4-->
+
+    <template id="template_footer_mars_4" inherit_id="website.layout" name="Template Header Footer Mars_4"
+              active="False">
+        <xpath expr="//div[@id='footer']" position="replace">
+            <section class="footer_light">
+                <div class="container">
+                    <div class="wrapper">
+                        <div class="row">
+                            <div class="col-lg-2 col-md-4 col-12">
+                                <div class="footer_links">
+                                    <h6 style="color: black;">
+                                        Discover
+                                    </h6>
+                                    <ul>
+                                        <li>
+                                            <a href="#">Features</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Layouts</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Corporate</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Updates</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Pricing</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Customers</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-lg-2 col-md-4 col-12">
+                                <div class="footer_links">
+                                    <h6 style="color: black;">
+                                        Features
+                                    </h6>
+                                    <ul>
+                                        <li>
+                                            <a href="#">Layouts</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Headers</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Widgets</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Footers</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-lg-2 col-md-4 col-12">
+                                <div class="footer_links">
+                                    <h6 style="color: black;">
+                                        Pages
+                                    </h6>
+                                    <ul>
+                                        <li>
+                                            <a href="#">Portfolio</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Blog</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Shop</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-lg-2 col-md-4 col-12">
+                                <div class="footer_links">
+                                    <h6 style="color: black;">
+                                        Support
+                                    </h6>
+                                    <ul>
+                                        <li>
+                                            <a href="#">Help Desk</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Documentation</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Contact US</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-8 col-12">
+                                <div class="footer_abt">
+                                    <h6 style="color: black;">
+                                        Mars Odoo Theme
+                                    </h6>
+                                    <p>
+                                        Built with Cybrosys calicut, Kerala, INDIA
+                                        All rights reserved. Copyright © 2021. CYBROSYS
+                                    </p>
+                                    <div class="footer_mailbox">
+                                        <p>
+                                            Please try searching again
+                                        </p>
+                                        <div class="input-group">
+                                            <input type="text" class="form-control" placeholder="Enter your Email"/>
+                                            <div class="input-group-append">
+                                                <button class="btn btn-secondary" type="button">
+                                                    <i class="bi bi-telegram"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer_bottom_light">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-5 col-md-5 col-12">
+                                <ul class="f_icons">
+                                    <li>
+                                        <a href="#">
+                                            <i class="bi bi-facebook "></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="bi bi-twitter"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="bi bi-google"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="bi bi-youtube"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="bi bi-instagram"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="bi bi-linkedin"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="bi bi-skype"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-lg-7 col-md-7 col-12 pt-3 pt-lg-0 pt-md-0">
+                                <p>
+                                    © 2019 POLO - Responsive Multi-Purpose HTML5 Template. All Rights Reserved.
+                                    <a
+                                            href="#">CYBROSYS
+                                    </a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </xpath>
+    </template>
+
+
+    <!--    Footer 5-->
+
+    <template id="template_footer_mars_5" inherit_id="website.layout" name="Template Header Footer Mars_5"
+              active="False">
+        <xpath expr="//div[@id='footer']" position="replace">
+            <section class="footer_light_5">
+                <div class="container">
+                    <div class="wrapper">
+                        <div class="row">
+                            <div class="col-lg-4 col-md-4 col-12">
+                                <div class="office_info">
+                                    <i class="bi bi-clock clr-clock"></i>
+                                    <div class="details">
+                                        <h5 style="color: black;">Working Days
+                                        </h5>
+                                        <p>Monday - Friday:</p>
+                                        <span>10:00 AM - 11:00 PM</span>
+                                        <p class="mt-3">Sturday - Sunday:</p>
+                                        <span>10:00 AM - 04:00 PM</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-12 pt-5 pt-lg-0 pt-md-0">
+                                <div class="office_info">
+                                    <i class="bi bi-geo-alt-fill clr-clock"></i>
+                                    <div class="details">
+                                        <h5 style="color: black;">Location</h5>
+                                        <div class="footer_address" style="color: #484848;">
+                                            <div t-field="res_company.partner_id"/>
+                                            <div t-field="res_company.street"/>
+                                            <div t-field="res_company.email"/>
+                                            <div t-field="res_company.phone"/>
+                                            <div t-field="res_company.website"/>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-12 pt-5 pt-lg-0 pt-md-0">
+                                <div class="office_info">
+                                    <i class="bi bi-telephone clr-clock"></i>
+                                    <div class="details" style="color: #484848;">
+                                        <h5 style="color: black;">Contact
+                                        </h5>
+                                        <p>Phone:</p>
+                                        <div t-field="res_company.email"/>
+                                        <div t-field="res_company.phone"/>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer_bottom_light">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-5 col-md-5 col-12">
+                                <ul class="f_icons">
+                                    <li>
+                                        <a href="/website/social/facebook" class="s_social_media_facebook"
+                                           target="_blank">
+                                            <i class="bi bi-facebook "></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/website/social/twitter" class="s_social_media_twitter"
+                                           target="_blank">
+                                            <i class="bi bi-twitter"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/website/social/google" class="s_social_media_google" target="_blank">
+                                            <i class="bi bi-google"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/website/social/youtube" class="s_social_media_youtube"
+                                           target="_blank">
+                                            <i class="bi bi-youtube"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/website/social/instagram" class="s_social_media_instagram"
+                                           target="_blank">
+                                            <i class="bi bi-instagram"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/website/social/linkedin" class="s_social_media_linkedin"
+                                           target="_blank">
+                                            <i class="bi bi-linkedin"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/website/social/skype" class="s_social_media_skype" target="_blank">
+                                            <i class="bi bi-skype"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-lg-7 col-md-7 col-12 pt-3 pt-lg-0 pt-md-0">
+                                <div class="container">
+                                    <p>
+                                        © 2022 MARS - Responsive Multi-Purpose HTML5 Template. All Rights Reserved.
+                                        <a href="#">CYBROSYS</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </xpath>
+    </template>
+
+
+    <!--    Footer 6-->
+
+    <template id="template_footer_mars_6" inherit_id="website.layout" name="Template Header Footer Mars_6"
+              active="False">
+        <xpath expr="//div[@id='footer']" position="replace">
+            <section class="footer_dark">
+                <div class="container">
+                    <div class="wrapper">
+                        <div class="row">
+                            <div class="col-lg-4 col-md-4 col-sm-6 col-12">
+                                <div class="footer_abt">
+                                    <h6>
+                                        Mars Odoo Theme
+                                    </h6>
+                                    <p>
+                                        Built with Cybrosys calicut, Kerala, INDIA
+                                        All rights reserved. Copyright © 2021. CYBROSYS
+                                    </p>
+                                    <a class="btn btn-primary" href="#">Purchase Now</a>
+                                </div>
+                            </div>
+                            <div class="col-lg-2 col-md-4 col-sm-6 col-12">
+                                <div class="footer_links">
+                                    <h6>
+                                        Discover
+                                    </h6>
+                                    <ul>
+                                        <li>
+                                            <a href="#">Features</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Layouts</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Corporate</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Updates</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Pricing</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Customers</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-lg-2 col-md-4 col-sm-6 col-12">
+                                <div class="footer_links">
+                                    <h6>
+                                        Features
+                                    </h6>
+                                    <ul>
+                                        <li>
+                                            <a href="#">Layouts</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Headers</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Widgets</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Footers</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-lg-2 col-md-4 col-sm-6 col-12">
+                                <div class="footer_links">
+                                    <h6>
+                                        Pages
+                                    </h6>
+                                    <ul>
+                                        <li>
+                                            <a href="#">Portfolio</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Blog</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Shop</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-lg-2 col-md-4 col-sm-6 col-12">
+                                <div class="footer_links">
+                                    <h6>
+                                        Support
+                                    </h6>
+                                    <ul>
+                                        <li>
+                                            <a href="#">Help Desk</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Documentation</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Contact US</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer_bottom text-center">
+                    <div class="container">
+                        <p>
+                            © 2022 MARS - Responsive Multi-Purpose HTML5 Template. All Rights Reserved.
+                            <a href="#">CYBROSYS</a>
+                        </p>
+                    </div>
+                </div>
+            </section>
+        </xpath>
+    </template>
+
+
+    <!--    <template id="template_footer_mars_6" inherit_id="website.layout" name="Template Header Footer Mars_6"-->
+    <!--              active="False">-->
+    <!--        <xpath expr="//div[@id='footer']" position="replace">-->
+    <!--            <section class="footer_clip_path">-->
+    <!--                <div class="container">-->
+    <!--                    <div class="wrapper">-->
+    <!--                        <div class="row">-->
+    <!--                            <div class="col-lg-4 col-md-4 col-sm-6 col-12">-->
+    <!--                                <div class="footer_abt">-->
+    <!--                                    <h6>-->
+    <!--                                        Mars Odoo Theme-->
+    <!--                                    </h6>-->
+    <!--                                    <p>-->
+    <!--                                        Built with Cybrosys calicut, Kerala, INDIA-->
+    <!--                                        All rights reserved. Copyright © 2021. CYBROSYS-->
+    <!--                                    </p>-->
+    <!--                                    <a class="btn btn-primary" href="#">Purchase Now</a>-->
+    <!--                                </div>-->
+    <!--                            </div>-->
+    <!--                            <div class="col-lg-2 col-md-4 col-sm-6 col-12">-->
+    <!--                                <div class="footer_links">-->
+    <!--                                    <h6>-->
+    <!--                                        Discover-->
+    <!--                                    </h6>-->
+    <!--                                    <ul>-->
+    <!--                                        <li>-->
+    <!--                                            <a href="#">Features</a>-->
+    <!--                                        </li>-->
+    <!--                                        <li>-->
+    <!--                                            <a href="#">Layouts</a>-->
+    <!--                                        </li>-->
+    <!--                                        <li>-->
+    <!--                                            <a href="#">Corporate</a>-->
+    <!--                                        </li>-->
+    <!--                                        <li>-->
+    <!--                                            <a href="#">Updates</a>-->
+    <!--                                        </li>-->
+    <!--                                        <li>-->
+    <!--                                            <a href="#">Pricing</a>-->
+    <!--                                        </li>-->
+    <!--                                        <li>-->
+    <!--                                            <a href="#">Customers</a>-->
+    <!--                                        </li>-->
+    <!--                                    </ul>-->
+    <!--                                </div>-->
+    <!--                            </div>-->
+    <!--                            <div class="col-lg-2 col-md-4 col-sm-6 col-12">-->
+    <!--                                <div class="footer_links">-->
+    <!--                                    <h6>-->
+    <!--                                        Features-->
+    <!--                                    </h6>-->
+    <!--                                    <ul>-->
+    <!--                                        <li>-->
+    <!--                                            <a href="#">Layouts</a>-->
+    <!--                                        </li>-->
+    <!--                                        <li>-->
+    <!--                                            <a href="#">Headers</a>-->
+    <!--                                        </li>-->
+    <!--                                        <li>-->
+    <!--                                            <a href="#">Widgets</a>-->
+    <!--                                        </li>-->
+    <!--                                        <li>-->
+    <!--                                            <a href="#">Footers</a>-->
+    <!--                                        </li>-->
+    <!--                                    </ul>-->
+    <!--                                </div>-->
+    <!--                            </div>-->
+    <!--                            <div class="col-lg-2 col-md-4 col-sm-6 col-12">-->
+    <!--                                <div class="footer_links">-->
+    <!--                                    <h6>-->
+    <!--                                        Pages-->
+    <!--                                    </h6>-->
+    <!--                                    <ul>-->
+    <!--                                        <li>-->
+    <!--                                            <a href="#">Portfolio</a>-->
+    <!--                                        </li>-->
+    <!--                                        <li>-->
+    <!--                                            <a href="#">Blog</a>-->
+    <!--                                        </li>-->
+    <!--                                        <li>-->
+    <!--                                            <a href="#">Shop</a>-->
+    <!--                                        </li>-->
+    <!--                                    </ul>-->
+    <!--                                </div>-->
+    <!--                            </div>-->
+    <!--                            <div class="col-lg-2 col-md-4 col-sm-6 col-12">-->
+    <!--                                <div class="footer_links">-->
+    <!--                                    <h6>-->
+    <!--                                        Support-->
+    <!--                                    </h6>-->
+    <!--                                    <ul>-->
+    <!--                                        <li>-->
+    <!--                                            <a href="#">Help Desk</a>-->
+    <!--                                        </li>-->
+    <!--                                        <li>-->
+    <!--                                            <a href="#">Documentation</a>-->
+    <!--                                        </li>-->
+    <!--                                        <li>-->
+    <!--                                            <a href="#">Contact US</a>-->
+    <!--                                        </li>-->
+    <!--                                    </ul>-->
+    <!--                                </div>-->
+    <!--                            </div>-->
+    <!--                        </div>-->
+    <!--                    </div>-->
+    <!--                </div>-->
+    <!--                <div class="footer_bottom text-center">-->
+    <!--                    <div class="container">-->
+    <!--                        <p>-->
+    <!--                            © 2022 MARS - Responsive Multi-Purpose HTML5 Template. All Rights Reserved.-->
+    <!--                            <a href="#">CYBROSYS</a>-->
+    <!--                        </p>-->
+    <!--                    </div>-->
+    <!--                </div>-->
+    <!--            </section>-->
+    <!--        </xpath>-->
+    <!--    </template>-->
+
+    <!--/FOOTER    -->
+
+</odoo>

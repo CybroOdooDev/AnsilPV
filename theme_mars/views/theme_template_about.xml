@@ -1,0 +1,1171 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+
+    <!--    Banner-->
+
+    <template id="banner" name="Banner">
+        <section class="banner_about_me_extended">
+            <div class="wrapper">
+                <div class="content">
+
+                    <h2>
+                        Jhon Smith
+                    </h2>
+                    <p>
+                        Web Designer / Developer
+                    </p>
+                </div>
+            </div>
+        </section>
+    </template>
+
+
+    <!--    Company Skill Progress-->
+
+
+    <template id="company_skill" name="skill progress">
+        <section class="company">
+            <div class="wrapper">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-4 col-12">
+                            <div class="left">
+                                <div class="sub_heading">
+                                    <h1>About me
+                                    </h1>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-9 col-md-8 col-12 pb-5">
+                            <div class="p_wrapper">
+                                <div class="right_p">
+                                    <p>The most happiest time of the day!. Morbi sagittis, sem quis lacinia faucibus,
+                                        orci ipsum gravida tortor, vel interdum mi sapien ut justo. Nulla varius
+                                        consequat
+                                        magna,
+                                        id molestie ipsum volutpat quis. A true story, that never been told!. Fusce id
+                                        mi
+                                        diam,
+                                        non ornare orci. Pellentesque ipsum erat,
+                                    </p>
+                                    <p>
+                                        facilisis ut venenatis eu, sodales vel dolor. The most happiest time of the
+                                        day!.
+                                        Morbi sagittis,
+                                        sem quis lacinia faucibus, orci ipsum gravida tortor, vel interdum mi sapien ut
+                                        justo. Nulla varius
+                                        consequat magna, id molestie ipsum volutpat quis. A true story, that never been
+                                        told!.
+                                        Fusce id mi diam, non ornare orci. Pellentesque ipsum erat, facilisis ut
+                                        venenatis
+                                        eu, sodales vel dolor.
+                                    </p>
+                                </div>
+                                <div class="left_p">
+                                    <p>
+                                        Pellentesque ipsum erat, facilisis ut venenatis eu, sodales vel dolor.
+                                        The most happiest time of the day!. Morbi sagittis, sem quis lacinia faucibus,
+                                        orci ipsum gravida tortor, vel interdum mi sapien ut justo. Nulla varius
+                                        consequat
+                                        magna,
+                                        id molestie ipsum volutpat quis. A true story, that never been told!. Fusce id
+                                        mi
+                                        diam,
+                                        non ornare orci. Pellentesque ipsum erat,
+                                        facilisis ut venenatis eu, sodales vel dolor. Pellentesque ipsum erat, facilisis
+                                        ut
+                                        venenatis eu, sodales vel dolor.
+                                    </p>
+                                    <p>
+                                        The most happiest time of the day!. Morbi sagittis, sem quis lacinia faucibus,
+                                        orci ipsum gravida tortor, vel interdum mi sapien ut justo. Nulla varius
+                                        consequat
+                                        magna, id molestie ipsum volut.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-12">
+                            <div class="left_b">
+                                <div class="sub_heading">
+                                    <h1>My Skills
+                                    </h1>
+                                    <p>Lorem ipsum dolor sit ametusp endisse consectetur fringilla luctus. Fusce id mi
+                                        diam,
+                                        non ornare orci. Pellentesque ipsum erat,
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-9 col-md-8 col-12">
+                            <div class="right">
+                                <div class="progress_wrapp">
+                                    <div class="s_progress_bar" data-display="inline">
+                                        <div class="progress_heading d-flex ">
+                                            <div class="name">HTML5</div>
+                                            <div class="percent s_progress_bar_text">80%</div>
+                                        </div>
+                                        <div class="progress" style="height: 2px; margin-bottom: 20px;">
+                                            <div class="progress-bar progress-bar-striped" role="progressbar"
+                                                 aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="s_progress_bar" data-display="inline">
+                                        <div class="progress_heading d-flex ">
+                                            <div class="name">CSS3</div>
+                                            <div class="percent s_progress_bar_text">94%</div>
+                                        </div>
+                                        <div class="progress" style="height: 2px; margin-bottom: 20px;">
+                                            <div class="progress-bar progress-bar-striped" role="progressbar"
+                                                 aria-valuenow="94" aria-valuemin="0" aria-valuemax="100">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="s_progress_bar" data-display="inline">
+                                        <div class="progress_heading d-flex ">
+                                            <div class="name">JQUERY</div>
+                                            <div class="percent s_progress_bar_text">89%</div>
+                                        </div>
+                                        <div class="progress" style="height: 2px; margin-bottom: 20px;">
+                                            <div class="progress-bar progress-bar-striped" role="progressbar"
+                                                 aria-valuenow="89" aria-valuemin="0" aria-valuemax="100">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="s_progress_bar" data-display="inline">
+                                        <div class="progress_heading d-flex ">
+                                            <div class="name">MYSQL</div>
+                                            <div class="percent s_progress_bar_text">78%</div>
+                                        </div>
+                                        <div class="progress" style="height: 2px; margin-bottom: 20px;">
+                                            <div class="progress-bar progress-bar-striped" role="progressbar"
+                                                 aria-valuenow="78" aria-valuemin="0" aria-valuemax="100">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="s_progress_bar" data-display="inline">
+                                        <div class="progress_heading d-flex ">
+                                            <div class="name">PHP</div>
+                                            <div class="percent s_progress_bar_text">75%</div>
+                                        </div>
+                                        <div class="progress" style="height: 2px; margin-bottom: 20px;">
+                                            <div class="progress-bar progress-bar-striped" role="progressbar"
+                                                 aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+
+
+    <!--    Team-->
+
+    <template id="team" name="Team">
+        <section class="team">
+            <div class="container">
+                <div class="wrapper">
+                    <div class="main_heading text-center">
+                        <div class="main_heading text-center">
+                            <h1>Meet our team</h1>
+                            <p>Our awesome clients we've had the pleasure to work with!</p>
+                        </div>
+                    </div>
+                    <div class="card-deck">
+                        <div class="card">
+                            <img class="card-img-top" src="/theme_mars/static/src/Images/team/team (3).jpg"
+                                 alt="Card image cap"/>
+                            <div class="card-body">
+                                <h5 class="card-title">Aron Ramsey</h5>
+                                <div class="blog_date">
+                                    <span>Software Developer</span>
+                                </div>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                    tristique hendrerit
+                                    laoreet.
+                                </p>
+                                <div class="card-footer bg-transparent ">
+                                    <div class="team_icon">
+                                        <a href="#" class="btn btn--hover-icon">
+                                            <i class="bi bi-facebook"/>
+                                            <span>facebook</span>
+                                        </a>
+                                        <a href="#" class="btn btn--hover-icon">
+                                            <i class="bi bi-twitter"/>
+                                            <span>twitter</span>
+                                        </a>
+                                        <a href="#" class="btn btn--hover-icon">
+                                            <i class="bi bi-instagram"/>
+                                            <span>instagram</span>
+                                        </a>
+                                        <a href="#" class="btn btn--hover-icon">
+                                            <i class="bi bi-envelope"/>
+                                            <span>mail</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img class="card-img-top" src="/theme_mars/static/src/Images/team/team (3).jpg"
+                                 alt="Card image cap"/>
+                            <div class="card-body">
+                                <h5 class="card-title">Aron Ramsey</h5>
+                                <div class="blog_date">
+                                    <span>Software Developer</span>
+                                </div>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                    tristique hendrerit
+                                    laoreet.
+                                </p>
+                                <div class="card-footer bg-transparent ">
+                                    <div class="team_icon">
+                                        <a href="#" class="btn btn--hover-icon">
+                                            <i class="bi bi-facebook"/>
+                                            <span>facebook</span>
+                                        </a>
+                                        <a href="#" class="btn btn--hover-icon">
+                                            <i class="bi bi-twitter"/>
+                                            <span>twitter</span>
+                                        </a>
+                                        <a href="#" class="btn btn--hover-icon">
+                                            <i class="bi bi-instagram"/>
+                                            <span>instagram</span>
+                                        </a>
+                                        <a href="#" class="btn btn--hover-icon">
+                                            <i class="bi bi-envelope"/>
+                                            <span>mail</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img class="card-img-top" src="/theme_mars/static/src/Images/team/team (3).jpg"
+                                 alt="Card image cap"/>
+                            <div class="card-body">
+                                <h5 class="card-title">Aron Ramsey</h5>
+                                <div class="blog_date">
+                                    <span>Software Developer</span>
+                                </div>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                    tristique hendrerit
+                                    laoreet.
+                                </p>
+                                <div class="card-footer bg-transparent ">
+                                    <div class="team_icon">
+                                        <a href="#" class="btn btn--hover-icon">
+                                            <i class="bi bi-facebook"/>
+                                            <span>facebook</span>
+                                        </a>
+                                        <a href="#" class="btn btn--hover-icon">
+                                            <i class="bi bi-twitter"/>
+                                            <span>twitter</span>
+                                        </a>
+                                        <a href="#" class="btn btn--hover-icon">
+                                            <i class="bi bi-instagram"/>
+                                            <span>instagram</span>
+                                        </a>
+                                        <a href="#" class="btn btn--hover-icon">
+                                            <i class="bi bi-envelope"/>
+                                            <span>mail</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img class="card-img-top" src="/theme_mars/static/src/Images/team/team (3).jpg"
+                                 alt="Card image cap"/>
+                            <div class="card-body">
+                                <h5 class="card-title">Aron Ramsey</h5>
+                                <div class="blog_date">
+                                    <span>Software Developer</span>
+                                </div>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                    tristique hendrerit
+                                    laoreet.
+                                </p>
+                                <div class="card-footer bg-transparent ">
+                                    <div class="team_icon">
+                                        <a href="#" class="btn btn--hover-icon">
+                                            <i class="bi bi-facebook"/>
+                                            <span>facebook</span>
+                                        </a>
+                                        <a href="#" class="btn btn--hover-icon">
+                                            <i class="bi bi-twitter"/>
+                                            <span>twitter</span>
+                                        </a>
+                                        <a href="#" class="btn btn--hover-icon">
+                                            <i class="bi bi-instagram"/>
+                                            <span>instagram</span>
+                                        </a>
+                                        <a href="#" class="btn btn--hover-icon">
+                                            <i class="bi bi-envelope"/>
+                                            <span>mail</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+
+
+    <!--    About Sction-->
+
+    <template id="about_section" name="About Section">
+        <section class="about about_basic about_footer">
+            <div class="container">
+                <div class="wrapper">
+                    <div class="main_heading text-center">
+                        <div class="main_heading text-center">
+                            <h1>WHAT WE DO</h1>
+                            <p>Create amaThe the happiest time of the day!.</p>
+                        </div>
+                    </div>
+                    <div class="abt_features">
+                        <div class="card-deck">
+                            <div class="card">
+                                <div class="card-body">
+                                    <span/>
+                                    <h5 class="card-title">Web Development</h5>
+                                    <p class="card-text">Lorem ipsum dolor sit amet, blandit vel sapien
+                                        vitae, condimentum
+                                        ultricies magna et. Quisque euismod orci ut et lobortis aliquam.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Social Marketing
+                                    </h5>
+                                    <p class="card-text">Lorem ipsum dolor sit amet, blandit vel sapien
+                                        vitae, condimentum
+                                        ultricies magna et. Quisque euismod orci ut et lobortis aliquam.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Graphic Design</h5>
+                                    <p class="card-text">Lorem ipsum dolor sit amet, blandit vel sapien
+                                        vitae, condimentum
+                                        ultricies magna et. Quisque euismod orci ut et lobortis aliquam.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-deck pt-2  ">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Web Design</h5>
+                                    <p class="card-text">Lorem ipsum dolor sit amet, blandit vel sapien
+                                        vitae, condimentum
+                                        ultricies magna et. Quisque euismod orci ut et lobortis aliquam.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">App Development
+                                    </h5>
+                                    <p class="card-text">Lorem ipsum dolor sit amet, blandit vel sapien
+                                        vitae, condimentum
+                                        ultricies magna et. Quisque euismod orci ut et lobortis aliquam.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Hosting services</h5>
+                                    <p class="card-text">Lorem ipsum dolor sit amet, blandit vel sapien
+                                        vitae, condimentum
+                                        ultricies magna et. Quisque euismod orci ut et lobortis aliquam.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+
+
+    <!--    Work Section-->
+
+
+    <template id="work_section" name="Work Section">
+        <section class="about_work_me_extended">
+            <div class="work_wrapper1">
+                <div class="number">
+                    01.
+                </div>
+                <h3>Concept</h3>
+                <p>
+                    The most happiest time of the day!.
+                    Morbi sagittis, sem quis lacinia faucibus, orci ipsum gravida tortor,
+                    vel interdum mi sapien ut justo. Nulla varius consequat magna, id molestie
+                    ipsum volutpat quis. A true story, that never been told!.
+                </p>
+            </div>
+            <div class="work_wrapper2">
+                <div class="number">
+                    02.
+                </div>
+                <h3>DEVELOPMENT</h3>
+                <p>
+                    The most happiest time of the day!.
+                    Morbi sagittis, sem quis lacinia faucibus, orci ipsum gravida tortor,
+                    vel interdum mi sapien ut justo. Nulla varius consequat magna, id molestie
+                    ipsum volutpat quis. A true story, that never been told!.
+                </p>
+            </div>
+            <div class="work_wrapper3">
+                <div class="number">
+                    03.
+                </div>
+                <h3>TESTING</h3>
+                <p>
+                    The most happiest time of the day!.
+                    Morbi sagittis, sem quis lacinia faucibus, orci ipsum gravida tortor,
+                    vel interdum mi sapien ut justo. Nulla varius consequat magna, id molestie
+                    ipsum volutpat quis. A true story, that never been told!.
+                </p>
+            </div>
+        </section>
+    </template>
+
+
+    <!--    Carousel-->
+
+    <template id="carousel" name="Carousel">
+
+
+        <section class="s_carousel_wrapper" data-vxml="001">
+            <t t-set="uniq" t-value="datetime.datetime.now().microsecond"/>
+            <div t-attf-id="myCarousel{{uniq}}" class="s_carousel s_carousel_default carousel slide"
+                 data-bs-interval="10000" style="background-image: none;width: 30%;height: 400px;">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li t-attf-data-bs-target="#myCarousel{{uniq}}" data-bs-slide-to="0" class="active"/>
+                    <li t-attf-data-bs-target="#myCarousel{{uniq}}" data-bs-slide-to="1"/>
+                    <li t-attf-data-bs-target="#myCarousel{{uniq}}" data-bs-slide-to="2"/>
+                </ol>
+                <!-- Content -->
+                <!-- TODO in master: remove the `content` classes in the div with
+                    the class `row`, to avoid having unwanted dropzones when
+                    dragging inner content. -->
+                <div class="carousel-inner">
+                    <!-- #01 -->
+                    <div class="carousel-item active oe_img_bg o_bg_img_center pt152 pb152"
+                         style="background-image: url('/web/image/website.s_carousel_default_image_1');"
+                         data-name="Slide">
+                        <div class="container oe_unremovable">
+                            <div class="row content">
+                                <div class="carousel-content col-lg-6">
+                                    <h2>
+                                        <font style="font-size: 62px;">Slide Title</font>
+                                    </h2>
+                                    <p class="lead">Use this snippet to presents your content in a slideshow-like
+                                        format. Don't write about products or services here, write about solutions.
+                                    </p>
+                                    <p>
+                                        <a href="/contactus" class="btn btn-primary mb-2">Contact us</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- #02 -->
+                    <div class="carousel-item oe_img_bg o_bg_img_center pt96 pb96"
+                         style="background-image: url('/web/image/website.s_carousel_default_image_2');"
+                         data-name="Slide">
+                        <div class="container oe_unremovable">
+                            <div class="row content">
+                                <div class="carousel-content col-lg-8 offset-lg-2 bg-black-50 text-center pt48 pb40">
+                                    <h2 style="font-size: 62px;">Clever Slogan</h2>
+                                    <div class="s_hr pt8 pb24" data-snippet="s_hr" data-name="Separator">
+                                        <hr class="w-25 mx-auto"
+                                            style="border-top-width: 1px; border-top-style: solid;"/>
+                                    </div>
+                                    <p class="lead">Storytelling is powerful.
+                                        <br/>
+                                        It draws readers in and engages them.
+                                    </p>
+                                    <p>
+                                        <a href="/" class="btn btn-primary mb-2">Start your journey</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- #03 -->
+                    <div class="carousel-item oe_img_bg o_bg_img_center pt128 pb128"
+                         style="background-image: url('/web/image/website.s_carousel_default_image_3');"
+                         data-name="Slide">
+                        <div class="container oe_unremovable">
+                            <div class="row content">
+                                <div class="carousel-content col-lg-6 offset-lg-6">
+                                    <h2>
+                                        <font style="font-size: 62px; background-color: rgb(255, 255, 255);">Edit this
+                                            title
+                                        </font>
+                                    </h2>
+                                    <h4>
+                                        <font style="background-color: rgb(255, 255, 255);">Good writing is simple, but
+                                            not simplistic.
+                                        </font>
+                                    </h4>
+                                    <p>
+                                        <br/>
+                                    </p>
+                                    <p>Good copy starts with understanding how your product or service helps your
+                                        customers. Simple words communicate better than big words and pompous language.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Controls -->
+                <a class="carousel-control-prev o_not_editable" contenteditable="false"
+                   t-attf-href="#myCarousel{{uniq}}" data-bs-slide="prev" role="img" aria-label="Previous"
+                   title="Previous">
+                    <span class="carousel-control-prev-icon"/>
+                    <span class="visually-hidden">Previous</span>
+                </a>
+                <a class="carousel-control-next o_not_editable" contenteditable="false"
+                   t-attf-href="#myCarousel{{uniq}}" data-bs-slide="next" role="img" aria-label="Next" title="Next">
+                    <span class="carousel-control-next-icon"/>
+                    <span class="visually-hidden">Next</span>
+                </a>
+            </div>
+        </section>
+
+
+        <!--        <section class=" about_basic_me">-->
+        <!--            <section class="recent">-->
+        <!--                <div class="recent_bottom">-->
+        <!--                    <div class="container-fluid">-->
+        <!--                        <div class="row">-->
+        <!--                            <div class="col-lg-5 col-md-5 col-sm-12">-->
+        <!--                                <div class="row">-->
+        <!--                                    <div class="col-6 p-0">-->
+        <!--                                        <div class="wrapper_1">-->
+        <!--                                            <div class="owl-carousel owl-theme">-->
+        <!--                                                <div class="item">-->
+        <!--                                                    <img src="/theme_mars/static/src/Images/recent works/1 (2).jpg"-->
+        <!--                                                         style="height: 200px;"/>-->
+        <!--                                                </div>-->
+        <!--                                                <div class="item">-->
+        <!--                                                    <img src="/theme_mars/static/src/Images/recent works/1 (1).jpg"-->
+        <!--                                                         style="height: 200px;"/>-->
+        <!--                                                </div>-->
+        <!--                                            </div>-->
+        <!--                                        </div>-->
+        <!--                                    </div>-->
+        <!--                                    <div class="col-6 p-0">-->
+        <!--                                        <div class="wrapper_2">-->
+        <!--                                            &lt;!&ndash;  Modal  &ndash;&gt;-->
+        <!--                                            <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"-->
+        <!--                                                 aria-labelledby="exampleModalCenterTitle" aria-hidden="true">-->
+        <!--                                                <div class="modal-dialog modal-dialog-centered" role="document">-->
+        <!--                                                    <div class="modal-content">-->
+        <!--                                                        <div class="modal-footer">-->
+        <!--                                                            <button type="button" class="btn btn-close"-->
+        <!--                                                                    data-dismiss="modal">X-->
+        <!--                                                            </button>-->
+        <!--                                                        </div>-->
+        <!--                                                        <div class="modal-body">-->
+        <!--                                                            <img id="myImg" class=""-->
+        <!--                                                                 src="/theme_mars/static/src/Images/recent works/1 (3).jpg"-->
+        <!--                                                                 style="width:100%;"/>-->
+        <!--                                                        </div>-->
+        <!--                                                        <h5 class="modal-title" id="exampleModalLongTitle">Modal title-->
+        <!--                                                        </h5>-->
+        <!--                                                    </div>-->
+        <!--                                                </div>-->
+        <!--                                            </div>-->
+        <!--                                            <img id="myImg" class=""-->
+        <!--                                                 src="/theme_mars/static/src/Images/recent works/1 (3).jpg"-->
+        <!--                                                 style="width:100%;"/>-->
+        <!--                                            <div class="inner">-->
+        <!--                                                <span href="#" class="quick_view slideInUp">-->
+        <!--                                                    <span id="myImg" class="links" alt="Snow">-->
+        <!--                                                        <a class=" item_show" data-toggle="modal"-->
+        <!--                                                           data-target="#exampleModalCenter">-->
+        <!--                                                            <i class="bi bi-fullscreen"/>-->
+        <!--                                                            <p class="itme_name">Papper pouch!</p>-->
+        <!--                                                        </a>-->
+        <!--                                                        <a href="#" class="pt-1">-->
+        <!--                                                            <i class="bi bi-link-45deg"/>-->
+        <!--                                                        </a>-->
+        <!--                                                    </span>-->
+        <!--                                                </span>-->
+        <!--                                            </div>-->
+        <!--                                        </div>-->
+        <!--                                    </div>-->
+        <!--                                    <div class="col-6 p-0">-->
+        <!--                                        <div class="wrapper_3">-->
+        <!--                                            <div class="sliding_product">-->
+        <!--                                                <div class="wrapper">-->
+        <!--                                                    <div class="img_wrapper">-->
+        <!--                                                        <img src="/theme_mars/static/src/Images/recent works/1 (1).jpg"-->
+        <!--                                                             class="see" alt=""/>-->
+        <!--                                                        <div class="inner">-->
+        <!--                                                            <a href="#" class="quick_view slideInUp">-->
+        <!--                                                                Let's go Outside-->
+        <!--                                                                <br/>-->
+        <!--                                                                <span>Illustration</span>-->
+        <!--                                                                <span>Graphics</span>-->
+        <!--                                                            </a>-->
+        <!--                                                        </div>-->
+        <!--                                                    </div>-->
+        <!--                                                </div>-->
+        <!--                                            </div>-->
+        <!--                                        </div>-->
+        <!--                                    </div>-->
+        <!--                                    <div class="col-6 p-0">-->
+        <!--                                        <div class="wrapper_2">-->
+        <!--                                            &lt;!&ndash;  Modal  &ndash;&gt;-->
+        <!--                                            <div class="modal fade" id="exampleModalCenter1" tabindex="-1" role="dialog"-->
+        <!--                                                 aria-labelledby="exampleModalCenterTitle" style="display: none;"-->
+        <!--                                                 aria-hidden="true">-->
+        <!--                                                <div class="modal-dialog modal-dialog-centered" role="document">-->
+        <!--                                                    <div class="modal-content">-->
+        <!--                                                        <div class="modal-footer">-->
+        <!--                                                            <button type="button" class="btn btn-close"-->
+        <!--                                                                    data-dismiss="modal">X-->
+        <!--                                                            </button>-->
+        <!--                                                        </div>-->
+        <!--                                                        <div class="modal-body">-->
+        <!--                                                            <div class="owl-carousel owl-loaded owl-hidden"-->
+        <!--                                                                 id="owl-theme3">-->
+        <!--                                                                <div class="owl-stage-outer">-->
+        <!--                                                                    <div class="owl-stage"-->
+        <!--                                                                         style="transform: translate3d(-1800px, 0px, 0px); transition: all 0.25s ease 0s; width: 3600px;">-->
+        <!--                                                                        <div class="owl-item cloned"-->
+        <!--                                                                             style="width: 600px;">-->
+        <!--                                                                            <div class="item">-->
+        <!--                                                                                <img src="/theme_mars/static/src/Images/recent works/1 (2).jpg"/>-->
+        <!--                                                                                <p class="slider_caption">Hi</p>-->
+        <!--                                                                            </div>-->
+        <!--                                                                        </div>-->
+        <!--                                                                        <div class="owl-item cloned"-->
+        <!--                                                                             style="width: 600px;">-->
+        <!--                                                                            <div class="item">-->
+        <!--                                                                                <img src="/theme_mars/static/src/Images/recent works/1 (1).jpg"/>-->
+        <!--                                                                            </div>-->
+        <!--                                                                        </div>-->
+        <!--                                                                        <div class="owl-item" style="width: 600px;">-->
+        <!--                                                                            <div class="item">-->
+        <!--                                                                                <img src="/theme_mars/static/src/Images/recent works/1 (2).jpg"/>-->
+        <!--                                                                                <p class="slider_caption">Hi</p>-->
+        <!--                                                                            </div>-->
+        <!--                                                                        </div>-->
+        <!--                                                                        <div class="owl-item active"-->
+        <!--                                                                             style="width: 600px;">-->
+        <!--                                                                            <div class="item">-->
+        <!--                                                                                <img src="/theme_mars/static/src/Images/recent works/1 (1).jpg"/>-->
+        <!--                                                                            </div>-->
+        <!--                                                                        </div>-->
+        <!--                                                                        <div class="owl-item cloned"-->
+        <!--                                                                             style="width: 600px;">-->
+        <!--                                                                            <div class="item">-->
+        <!--                                                                                <img src="/theme_mars/static/src/Images/recent works/1 (2).jpg"/>-->
+        <!--                                                                            </div>-->
+        <!--                                                                        </div>-->
+        <!--                                                                        <div class="owl-item cloned"-->
+        <!--                                                                             style="width: 600px;">-->
+        <!--                                                                            <div class="item">-->
+        <!--                                                                                <img src="/theme_mars/static/src/Images/recent works/1 (1).jpg"/>-->
+        <!--                                                                            </div>-->
+        <!--                                                                        </div>-->
+        <!--                                                                    </div>-->
+        <!--                                                                </div>-->
+        <!--                                                                <div class="owl-nav">-->
+        <!--                                                                    <button type="button" role="presentation"-->
+        <!--                                                                            class="owl-prev">-->
+        <!--                                                                        <span aria-label="Previous">‹</span>-->
+        <!--                                                                    </button>-->
+        <!--                                                                    <button type="button" role="presentation"-->
+        <!--                                                                            class="owl-next">-->
+        <!--                                                                        <span aria-label="Next">›</span>-->
+        <!--                                                                    </button>-->
+        <!--                                                                </div>-->
+        <!--                                                                <div class="owl-dots">-->
+        <!--                                                                    <button role="button" class="owl-dot">-->
+        <!--                                                                        <span/>-->
+        <!--                                                                    </button>-->
+        <!--                                                                    <button role="button" class="owl-dot active">-->
+        <!--                                                                        <span/>-->
+        <!--                                                                    </button>-->
+        <!--                                                                </div>-->
+        <!--                                                            </div>-->
+        <!--                                                        </div>-->
+        <!--                                                        &lt;!&ndash;  <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>  &ndash;&gt;-->
+        <!--                                                    </div>-->
+        <!--                                                </div>-->
+        <!--                                            </div>-->
+        <!--                                            <img id="myImg" class=""-->
+        <!--                                                 src="/theme_mars/static/src/Images/recent works/1 (3).jpg"-->
+        <!--                                                 style="width:100%;"/>-->
+        <!--                                            <div class="inner">-->
+        <!--                                                <span href="#" class="quick_view slideInUp">-->
+        <!--                                                    <span id="myImg" class="links" alt="Snow">-->
+        <!--                                                        <a class=" item_show" data-toggle="modal"-->
+        <!--                                                           data-target="#exampleModalCenter1">-->
+        <!--                                                            <i class="bi bi-text-paragraph"/>-->
+        <!--                                                            <p class="itme_name">Papper pouch!</p>-->
+        <!--                                                        </a>-->
+        <!--                                                        <a href="#" class="pt-1">-->
+        <!--                                                            <i class="bi bi-link-45deg"/>-->
+        <!--                                                        </a>-->
+        <!--                                                    </span>-->
+        <!--                                                </span>-->
+        <!--                                            </div>-->
+        <!--                                        </div>-->
+        <!--                                    </div>-->
+        <!--    </div>-->
+        <!--</div>-->
+        <!--                            <div class="col-lg-4 col-md-4 col-7 p-0">-->
+        <!--                                <div class="wrapper_1">-->
+        <!--                                    <div class="owl-carousel owl-theme">-->
+        <!--                                        <div class="item">-->
+        <!--                                            <img src="/theme_mars/static/src/Images/recent works/a1.jpg"/>-->
+        <!--                                        </div>-->
+        <!--                                        <div class="item">-->
+        <!--                                            <img src="/theme_mars/static/src/Images/recent works/a3.jpg"/>-->
+        <!--                                        </div>-->
+        <!--                                    </div>-->
+        <!--                                </div>-->
+        <!--                            </div>-->
+        <!--                            <div class="col-lg-3 col-md-3 col-5 p-0">-->
+        <!--                                <div class="wrapper_3">-->
+        <!--                                    <div class="sliding_product">-->
+        <!--                                        <div class="wrapper">-->
+        <!--                                            <div class="img_wrapper">-->
+        <!--                                                <img src="/theme_mars/static/src/Images/recent works/a2.jpg"-->
+        <!--                                                     class="see"-->
+        <!--                                                     alt=""/>-->
+        <!--                                                <div class="inner">-->
+        <!--                                                    <a href="#"-->
+        <!--                                                       class="quick_view slideInUp">-->
+        <!--                                                        Let's go Outside-->
+        <!--                                                        <br/>-->
+        <!--                                                        <span>Illustration</span>-->
+        <!--                                                        <span>Graphics</span>-->
+        <!--                                                    </a>-->
+        <!--                                                </div>-->
+        <!--                                            </div>-->
+        <!--                                        </div>-->
+        <!--                                    </div>-->
+        <!--                                </div>-->
+        <!--                            </div>-->
+        <!--        </div>-->
+        <!--                        <div class="row">-->
+        <!--                            <div class="col-lg-5 col-md-5 col-12">-->
+        <!--                                <div class="row">-->
+        <!--                                    <div class="col-6 p-0">-->
+        <!--                                        <div class="wrapper_1">-->
+        <!--                                            <div class="owl-carousel owl-theme">-->
+        <!--                                                <div class="item">-->
+        <!--                                                    <img src="/theme_mars/static/src/Images/recent works/1 (2).jpg"/>-->
+        <!--                                                </div>-->
+        <!--                                                <div class="item">-->
+        <!--                                                    <img src="/theme_mars/static/src/Images/recent works/1 (1).jpg"/>-->
+        <!--                                                </div>-->
+        <!--                                            </div>-->
+        <!--                                        </div>-->
+        <!--                                    </div>-->
+        <!--                                    <div class="col-6 p-0">-->
+        <!--                                        <div class="wrapper_2">-->
+        <!--                                            &lt;!&ndash;  Modal  &ndash;&gt;-->
+        <!--                                            <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"-->
+        <!--                                                 aria-labelledby="exampleModalCenterTitle" aria-hidden="true">-->
+        <!--                                                <div class="modal-dialog modal-dialog-centered" role="document">-->
+        <!--                                                    <div class="modal-content">-->
+        <!--                                                        <div class="modal-footer">-->
+        <!--                                                            <button type="button" class="btn btn-close"-->
+        <!--                                                                    data-dismiss="modal">X-->
+        <!--                                                            </button>-->
+        <!--                                                        </div>-->
+        <!--                                                        <div class="modal-body">-->
+        <!--                                                            <img id="myImg" class=""-->
+        <!--                                                                 src="/theme_mars/static/src/Images/recent works/1 (3).jpg"-->
+        <!--                                                                 style="width:100%;"/>-->
+        <!--                                                        </div>-->
+        <!--                                                        <h5 class="modal-title" id="exampleModalLongTitle">Modal title-->
+        <!--                                                        </h5>-->
+        <!--                                                    </div>-->
+        <!--                                                </div>-->
+        <!--                                            </div>-->
+        <!--                                            <img id="myImg" class=""-->
+        <!--                                                 src="/theme_mars/static/src/Images/recent works/1 (3).jpg"-->
+        <!--                                                 style="width:100%;"/>-->
+        <!--                                            <div class="inner">-->
+        <!--                                                <span href="#" class="quick_view slideInUp">-->
+        <!--                                                    <span id="myImg" class="links" alt="Snow">-->
+        <!--                                                        <a class=" item_show" data-toggle="modal"-->
+        <!--                                                           data-target="#exampleModalCenter">-->
+        <!--                                                            <i class="bi bi-fullscreen"/>-->
+        <!--                                                            <p class="itme_name">Papper pouch!</p>-->
+        <!--                                                        </a>-->
+        <!--                                                        <a href="#" class="pt-1">-->
+        <!--                                                            <i class="bi bi-link-45deg"/>-->
+        <!--                                                        </a>-->
+        <!--                                                    </span>-->
+        <!--                                                </span>-->
+        <!--                                            </div>-->
+        <!--                                        </div>-->
+        <!--                                    </div>-->
+        <!--                                </div>-->
+        <!--                            </div>-->
+        <!--                            <div class="col-lg-2 col-md-2 col-6 p-0">-->
+        <!--                                <div class="wrapper_1">-->
+        <!--                                    <div class="owl-carousel owl-theme">-->
+        <!--                                        <div class="item">-->
+        <!--                                            <img src="/theme_mars/static/src/Images/recent works/ab (3).jpg"/>-->
+        <!--                                        </div>-->
+        <!--                                        <div class="item">-->
+        <!--                                            <img src="/theme_mars/static/src/Images/recent works/ab (2).jpg"/>-->
+        <!--                                        </div>-->
+        <!--                                    </div>-->
+        <!--                                </div>-->
+        <!--                            </div>-->
+        <!--                            <div class="col-lg-2 col-md-2 col-6 p-0">-->
+        <!--                                <div class="wrapper_2">-->
+        <!--                                    &lt;!&ndash;  Modal  &ndash;&gt;-->
+        <!--                                    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"-->
+        <!--                                         aria-labelledby="exampleModalCenterTitle" aria-hidden="true">-->
+        <!--                                        <div class="modal-dialog modal-dialog-centered" role="document">-->
+        <!--                                            <div class="modal-content">-->
+        <!--                                                <div class="modal-footer">-->
+        <!--                                                    <button type="button" class="btn btn-close" data-dismiss="modal">X-->
+        <!--                                                    </button>-->
+        <!--                                                </div>-->
+        <!--                                                <div class="modal-body">-->
+        <!--                                                    <img id="myImg" class=""-->
+        <!--                                                         src="/theme_mars/static/src/Images/recent works/1 (3).jpg"-->
+        <!--                                                         style="width:100%;"/>-->
+        <!--                                                </div>-->
+        <!--                                                <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>-->
+        <!--                                            </div>-->
+        <!--                                        </div>-->
+        <!--                                    </div>-->
+        <!--                                    <img id="myImg" class="" src="/theme_mars/static/src/Images/recent works/a4.jpg"-->
+        <!--                                         style="width:100%;"/>-->
+        <!--                                    <div class="inner">-->
+        <!--                                        <span href="#" class="quick_view slideInUp">-->
+        <!--                                            <span id="myImg" class="links" alt="Snow">-->
+        <!--                                                <a class=" item_show" data-toggle="modal"-->
+        <!--                                                   data-target="#exampleModalCenter">-->
+        <!--                                                    <i class="bi bi-fullscreen"/>-->
+        <!--                                                    <p class="itme_name">Papper pouch!</p>-->
+        <!--                                                </a>-->
+        <!--                                                <a href="#" class="pt-1">-->
+        <!--                                                    <i class="bi bi-link-45deg"/>-->
+        <!--                                                </a>-->
+        <!--                                            </span>-->
+        <!--                                        </span>-->
+        <!--                                    </div>-->
+        <!--                                </div>-->
+        <!--                            </div>-->
+        <!--                            <div class="col-lg-3 col-md-3 col-12 p-0">-->
+        <!--                                <div class="wrapper_3">-->
+        <!--                                    <div class="sliding_product">-->
+        <!--                                        <div class="wrapper">-->
+        <!--                                            <div class="img_wrapper">-->
+        <!--                                                <img src="/theme_mars/static/src/Images/recent works/ab (1).jpg"-->
+        <!--                                                     class="see" alt=""/>-->
+        <!--                                            </div>-->
+        <!--                                        </div>-->
+        <!--                                    </div>-->
+        <!--                                </div>-->
+        <!--                            </div>-->
+        <!--                        </div>-->
+        <!--        </div>-->
+        <!--        </div>-->
+        <!--        </section>-->
+        <!--        </section>-->
+    </template>
+
+
+    <!--    People Quates-->
+
+    <template id="quates" name="Quates">
+        <section class="about_client">
+            <div class="container">
+                <div class="wrapper">
+                    <h1>What people are saying!</h1>
+                    <p>
+                        The most happiest time of the day!. Morbi sagittis,
+                        sem quis lacinia faucibus, orci ipsum gravida tortor,
+                        vel interdum mi
+                        <br/>
+                        sapien ut justo.
+                    </p>
+                    <div class="client_slider">
+                        <div class=" slider owl-carousel ">
+                            <div>
+                                <div class="slider_wrapper">
+                                    <div class="Partner_img">
+                                        <img src="/theme_mars/static/src/Images/team/client.jpg"/>
+                                    </div>
+                                    <div class="slider_info">
+                                        <p class="info">The most happiest time of the day!.
+                                            Morbi sagittis, sem quis lacinia faucibus, orci
+                                            ipsum gravida tortor, vel interdum mi sapien ut justo.
+                                        </p>
+                                        <div class="name">
+                                            James Rodrigues
+                                        </div>
+                                        <div class="pos">CEO,
+                                            <span>Tech solution</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="slider_wrapper">
+                                    <div class="Partner_img">
+                                        <img src="/theme_mars/static/src/Images/team/client.jpg"/>
+                                    </div>
+                                    <div class="slider_info">
+                                        <p class="info">The most happiest time of the day!.
+                                            Morbi sagittis, sem quis lacinia faucibus, orci
+                                            ipsum gravida tortor, vel interdum mi sapien ut justo.
+                                        </p>
+                                        <div class="name">
+                                            James Rodrigues
+                                        </div>
+                                        <div class="pos">CEO,
+                                            <span>Tech solution</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="slider_wrapper">
+                                    <div class="Partner_img">
+                                        <img src="/theme_mars/static/src/Images/team/client.jpg"/>
+                                    </div>
+                                    <div class="slider_info">
+                                        <p class="info">The most happiest time of the day!.
+                                            Morbi sagittis, sem quis lacinia faucibus, orci
+                                            ipsum gravida tortor, vel interdum mi sapien ut justo.
+                                        </p>
+                                        <div class="name">
+                                            James Rodrigues
+                                        </div>
+                                        <div class="pos">CEO,
+                                            <span>Tech solution</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+
+
+    <!--    About Partners-->
+
+    <template id="partners" name="About Partners">
+        <section class="about_partner">
+            <div class="hd">
+                <center>
+                    <span>
+                        v
+                    </span>
+                </center>
+            </div>
+            <div class="wrapper">
+                <center>
+                    <p>Our awesome clients we've had the pleasure to work with!</p>
+                </center>
+                <div class="container">
+                    <ul class="team_info">
+                        <li>
+                            <a href="#">
+                                <img src="/theme_mars/static/src/Images/partners/p (1).png" alt=""/>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="/theme_mars/static/src/Images/partners/p (1).png" alt=""/>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="/theme_mars/static/src/Images/partners/p (1).png" alt=""/>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="/theme_mars/static/src/Images/partners/p (1).png" alt=""/>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="/theme_mars/static/src/Images/partners/p (1).png" alt=""/>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="/theme_mars/static/src/Images/partners/p (1).png" alt=""/>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="/theme_mars/static/src/Images/partners/p (1).png" alt=""/>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="/theme_mars/static/src/Images/partners/p (1).png" alt=""/>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="/theme_mars/static/src/Images/partners/p (1).png" alt=""/>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="/theme_mars/static/src/Images/partners/p (1).png" alt=""/>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </template>
+
+
+    <!--    Buy Now-->
+
+
+    <template id="bur_now" name="Buy">
+        <section class="buy">
+            <div class="container text-center">
+                <h4>
+                    Ready to buy MARS Template?
+                </h4>
+                <p>
+                    This is a simple hero unit, a simple call-to-action-style component for calling extra attention to
+                    featured content.
+                </p>
+                <a href="#" class="btn btn-primary">BUY NOW!</a>
+            </div>
+        </section>
+    </template>
+
+
+    <!--    Pie Chart-->
+
+
+    <template id="pie_chart" name="Pie Chart">
+        <!--  pie chart section starts here  -->
+        <section class="about_basic_me">
+            <section id="s-team" class="pie_chart">
+                <div class="b-skills">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-6 col-md-3 p-0">
+                                <div class="skill-item center-block">
+                                    <div class="chart-container">
+                                        <div class="charts" data-percent="92" data-bar-color="#23afe3">
+                                            <span class="percent" data-after="%">92</span>
+                                        </div>
+                                    </div>
+                                    <div class="chart_bottom">
+                                        <span>Skills</span>
+                                        <br/>
+                                        <p>Lorem ipsum dolor sit amet, consecte adipiscing elit. Condimentum porttitor
+                                            cursumus
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-6 col-md-3 p-0">
+                                <div class="skill-item center-block">
+                                    <div class="chart-container">
+                                        <div class="charts" data-percent="78" data-bar-color="#a7d212">
+                                            <span class="percent" data-after="%">78</span>
+                                        </div>
+                                    </div>
+                                    <div class="chart_bottom">
+                                        <span>content</span>
+                                        <br/>
+                                        <p>Lorem ipsum dolor sit amet, consecte adipiscing elit. Condimentum porttitor
+                                            cursumus
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-6 col-md-3 p-0">
+                                <div class="skill-item center-block">
+                                    <div class="chart-container">
+                                        <div class="charts" data-percent="95" data-bar-color="#ff4241">
+                                            <span class="percent" data-after="%">95</span>
+                                        </div>
+                                    </div>
+                                    <div class="chart_bottom">
+                                        <span>Web sites</span>
+                                        <br/>
+                                        <p>Lorem ipsum dolor sit amet, consecte adipiscing elit. Condimentum porttitor
+                                            cursumus
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-6 col-md-3 p-0">
+                                <div class="skill-item center-block">
+                                    <div class="chart-container">
+                                        <div class="charts" data-percent="65" data-bar-color="#edc214">
+                                            <span class="percent" data-after="%">65</span>
+                                        </div>
+                                    </div>
+                                    <div class="chart_bottom">
+                                        <span>Employees</span>
+                                        <br/>
+                                        <p>Lorem ipsum dolor sit amet, consecte adipiscing elit. Condimentum porttitor
+                                            cursumus
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+    </template>
+
+
+    <template id="mars_pie_chart_options" inherit_id="website.snippet_options">
+        <xpath expr="." position="inside">
+            <div data-js="pieChartSnippets" data-selector=".chart-container">
+                <we-input string="Value" data-progress-bar-value="" data-unit="%"/>
+<!--                <we-input id="test_value" force_save="1" string="Percent %" data-step="1" data-pie_chart-attribute="" data-unit="%"/>-->
+            </div>
+        </xpath>
+    </template>
+
+
+</odoo>
