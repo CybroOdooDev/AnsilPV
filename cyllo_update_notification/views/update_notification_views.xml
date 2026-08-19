@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <!-- =====================================================================
+         Received update notifications. Records are created by the public
+         controller through sudo(), so every view here is read-only: there is
+         no case for hand-editing a ping that another database sent.
+         ===================================================================== -->
+    <record id="view_cyllo_update_notification_tree" model="ir.ui.view">
+        <field name="name">cyllo.update.notification.tree</field>
+        <field name="model">cyllo.update.notification</field>
+        <field name="arch" type="xml">
+            <tree string="Update Notifications" create="false" edit="false" delete="true">
+                <field name="received_date"/>
+                <field name="dbname"/>
+                <field name="version"/>
+                <field name="nbr_users"/>
+                <field name="nbr_active_users"/>
+                <field name="app_count"/>
+                <field name="company_name" optional="show"/>
+                <field name="web_base_url" optional="hide"/>
+                <field name="dbuuid" optional="hide"/>
+                <field name="enterprise_code" optional="hide"/>
+                <field name="remote_addr" optional="hide"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="view_cyllo_update_notification_form" model="ir.ui.view">
+        <field name="name">cyllo.update.notification.form</field>
+        <field name="model">cyllo.update.notification</field>
+        <field name="arch" type="xml">
+            <form string="Update Notification" create="false" edit="false">
+                <sheet>
+                    <div class="oe_title">
+                        <h1><field name="dbname" placeholder="Database"/></h1>
+                    </div>
+                    <group>
+                        <group string="Sender">
+                            <field name="dbuuid"/>
+                            <field name="db_create_date"/>
+                            <field name="version"/>
+                            <field name="web_base_url" widget="url"/>
+                            <field name="language"/>
+                            <field name="enterprise_code"/>
+                        </group>
+                        <group string="Received">
+                            <field name="received_date"/>
+                            <field name="remote_addr"/>
+                        </group>
+                        <group string="Users">
+                            <field name="nbr_users"/>
+                            <field name="nbr_active_users"/>
+                            <field name="nbr_share_users"/>
+                            <field name="nbr_active_share_users"/>
+                        </group>
+                        <group string="Company">
+                            <field name="company_name"/>
+                            <field name="company_email" widget="email"/>
+                            <field name="company_phone" widget="phone"/>
+                        </group>
+                    </group>
+                    <notebook>
+                        <page string="Installed Apps" name="apps">
+                            <field name="app_count"/>
+                            <field name="apps"/>
+                        </page>
+                        <page string="Raw Payload" name="raw">
+                            <field name="raw_payload"/>
+                        </page>
+                    </notebook>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="view_cyllo_update_notification_search" model="ir.ui.view">
+        <field name="name">cyllo.update.notification.search</field>
+        <field name="model">cyllo.update.notification</field>
+        <field name="arch" type="xml">
+            <search string="Update Notifications">
+                <field name="dbname"/>
+                <field name="dbuuid"/>
+                <field name="version"/>
+                <field name="company_name"/>
+                <filter name="filter_enterprise" string="Enterprise"
+                        domain="[('enterprise_code', '!=', False)]"/>
+                <group expand="0" string="Group By">
+                    <filter name="group_dbname" string="Database"
+                            context="{'group_by': 'dbname'}"/>
+                    <filter name="group_version" string="Odoo Version"
+                            context="{'group_by': 'version'}"/>
+                    <filter name="group_received" string="Received On"
+                            context="{'group_by': 'received_date:week'}"/>
+                </group>
+            </search>
+        </field>
+    </record>
+
+    <record id="action_cyllo_update_notification" model="ir.actions.act_window">
+        <field name="name">Update Notifications</field>
+        <field name="res_model">cyllo.update.notification</field>
+        <field name="view_mode">tree,form</field>
+        <field name="context">{'search_default_group_dbname': 1}</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiley_face">No update notification received yet</p>
+            <p>
+                Instances ping this server weekly through their
+                <b>Publisher: Update Notification</b> scheduled action, once
+                their <code>publisher_warranty_url</code> points at
+                <code>/publisher-warranty</code> here.
+            </p>
+        </field>
+    </record>
+
+    <menuitem id="menu_cyllo_update_notification"
+              name="Update Notifications"
+              parent="base.menu_custom"
+              action="action_cyllo_update_notification"
+              sequence="500"
+              groups="base.group_system"/>
+</odoo>
